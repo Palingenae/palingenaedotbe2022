@@ -1,0 +1,134 @@
+/*
+** Importing typography
+*/
+
+@font-face {
+  font-family: "Fraunces"; 
+  font-style: normal;
+  src: url('../fonts/fraunces/Fraunces[SOFT,WONK,opsz,wght].woff2');
+}
+
+@font-face {
+  font-family: "Fraunces"; 
+  font-style: italic;
+  src: url('../fonts/fraunces/Fraunces-Italic[SOFT,WONK,opsz,wght].woff2');
+}
+
+@font-face {
+  font-family: "Work Sans"; 
+  font-style: normal;
+  src: url('../fonts/work sans/WorkSans[wght].ttf');
+}
+
+@font-face {
+  font-family: "Work Sans"; 
+  font-style: italic;
+  src: url('../fonts/work sans/WorkSans-Italic[wght].ttf');
+}
+
+// @font-face {
+//   font-family: "Public Sans"; 
+//   src: url('~assets/fonts/Public_Sans/PublicSans-VariableFont_wght.ttf') format('truetype');
+// }
+
+/*
+** Defining typographic variables
+*/
+h1,
+h2,
+h3,
+h4 {
+  color: $grey-9;
+  font-family: $font-display;
+  line-height: $spacing-display-line-height;
+  letter-spacing: $spacing-letter-spacing-title;
+  //margin-bottom: $spacing-margin;
+}
+
+h1 {
+  font-size: ms(6);
+  font-weight: 800;
+}
+
+h2 {
+  font-size: ms(5);
+  font-weight: 600;
+  color: $grey-8;
+}
+
+// h3 {
+//   font-size: ms(4);
+//   font-style: italic;
+//   font-weight: 400; 
+// }
+
+// h4 {
+//   font-size: ms(3);
+// }
+
+p {
+  font: {
+    family: $font-text;
+    weight: 400;
+    size: ms(1);
+  }
+  color: $grey-9;
+  margin-bottom: $spacing-margin/2;
+}
+
+.paragraph {
+  @extend p;
+  &--jumbo {
+    color: $grey-8;
+    font-size: ms(1);
+    font-weight: 300;
+    max-width: $text-width;
+    margin-bottom: $spacing-margin;
+  }
+}
+
+.user-interactions {
+  @extend p;
+  color: $grey-8;
+  font-size: ms(1);
+}
+
+/* ----- Giving all labor elements the same line-height and letter spacing nomatter the context ----- */
+a,
+b,
+p,
+em,
+strong,
+span,
+ul,
+li {
+  color: $grey-9;
+  line-height: $spacing-text-line-height;
+  letter-spacing: $spacing-letter-spacing-text;
+}
+
+.bold,
+b,
+strong {
+  font-weight: 700;
+}
+
+.semibold {
+  font-weight: 500;
+}
+
+.italic,
+i,
+em {
+  font-style: italic;
+}
+
+// a {
+//   color: $colour-1;
+// }
+
+/* ----- I'll remove that whenever a new component SCSS file would be needed for icons----- */
+i.fab,
+i.fas {
+  margin-right: $spacing-margin/2;
+}

@@ -1,0 +1,37 @@
+.navigation {
+  &__site {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    justify-items: center;
+    align-items: center;
+    padding: $spacing-padding $spacing-padding*2;
+    @include breakpoint(sm) {
+      padding: $spacing-padding;
+    }
+    &__right,
+    &__left {
+      display: flex;
+    }
+    &__menu {
+      list-style: none;
+      display: inline-flex;
+      .menu {
+        &__element a {
+          @include transition();
+          color: $grey-10;
+          text-decoration: none;
+          font-size: ms(0);
+          padding: $spacing-padding/2 $spacing-padding;
+          &:hover,
+          &:focus {
+            color: $grey-1;
+            background-color: $grey-10;
+          }
+        }
+      }
+    }
+  }
+}

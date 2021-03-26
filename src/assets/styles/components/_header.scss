@@ -1,0 +1,11 @@
+.header {
+  //-- only for this case now. This will change when there will be a blog
+  max-width: 60rem;
+  &__introduction {
+    @extend .paragraph--jumbo;
+  }
+  //padding: $spacing-padding $spacing-padding*2;
+    @include breakpoint(sm) {
+      padding: $spacing-padding/2 $spacing-padding;
+    }
+}

@@ -1,0 +1,10 @@
+.section {
+    //display: flex;
+    max-width: $block-width;
+    padding: $spacing-padding;
+    margin: 0 auto;
+    @include breakpoint(sm) {
+      padding: $spacing-padding;
+    }
+    margin-bottom: $spacing-margin*3;
+}

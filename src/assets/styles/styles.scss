@@ -1,0 +1,50 @@
+/* ----- 
+** Vendor 
+** ----- */
+@import './vendor/_modularscale.scss';
+
+/* ----- 
+** Mixins 
+** ----- */
+@import './modules/_transition.scss';
+@import './modules/_breakpoints.scss';
+//@import './modules/_shadows.scss';
+//@import './modules/_borders.scss';
+//@import './modules/_gradients.scss';
+
+/*  ----- 
+** Global styles, Atoms
+** ----- */
+@import './modules/_variables.scss';
+@import './modules/_typography.scss';
+//@import './modules/_theme.scss';
+
+/* ----- 
+** Abstracted components 
+** ----- */
+// @import './components/_global.scss';
+
+// /* Elements, Molecules */
+// @import './components/_link.scss';
+// @import './components/_list.scss';
+// @import './components/_button.scss';
+@import './components/_separator.scss';
+
+// /* Containers, Organisms */
+// @import './components/_main.scss';
+// @import './components/_header.scss';
+@import './components/_navigation.scss';
+@import './components/_section.scss';
+// @import './components/_article.scss';
+// @import './components/_homepage.scss';
+// @import './components/_cta.scss';
+@import './components/_footer.scss';
+
+// /* Layouts */
+// @import './components/_page.scss';
+
+// /* ----- 
+// ** Contextualized Components 
+// ** ----- */
+// @import './components/_facts.scss';
+// @import './components/_resume.scss';

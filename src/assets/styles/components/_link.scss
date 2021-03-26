@@ -1,0 +1,107 @@
+.link {
+  @include transition();
+  display: inline-flex;
+  align-items: baseline;
+  text-decoration: none;
+  //color: inherit;
+  //color: $colour-1;
+  font-family: $font-text;
+  //margin: 0 $spacing-margin/2;
+  &:hover {
+    @include transition;
+    color: $colour-2;
+  }
+  &__home > a {
+    text-decoration: none;
+    color: $colour-main;
+  }
+  &__branded {
+    @extend .link;
+    font: {
+      family: $font-text;
+      size: ms(1);
+      weight: 300;
+    }
+    line-height: 1;
+    padding: $spacing-padding/2 $spacing-padding;
+    &--linkedin {
+      @extend .link__branded;
+      color: $colour-brand-linkedin;
+      &:hover {
+        @include transition;
+        color: $grey-1;
+        background-color: $colour-brand-linkedin;
+      }
+    }
+    &--twitter {
+      @extend .link__branded;
+      color: $colour-brand-twitter;
+      &:hover {
+        @include transition;
+        color: $grey-1;
+        background-color: $colour-brand-twitter;
+      }
+    }
+    &--github,
+    &--500px,
+    &--unsplash {
+      @extend .link__branded;
+      color: $colour-brand-github;
+      &:hover {
+        @include transition;
+        color: $grey-1;
+        background-color: $colour-brand-github;
+      }
+    }
+    &--gitlab {
+      @extend .link__branded;
+      color: $colour-brand-gitlab;
+      &:hover {
+        @include transition;
+        color: $grey-1;
+        background-color: $colour-brand-gitlab;
+      }
+    }
+    &--instagram {
+      @extend .link__branded;
+      color: $colour-brand-instagram;
+      &:hover {
+        @include transition;
+        color: $grey-1;
+        background-color: $colour-brand-instagram;
+      }
+    }
+    &--behance {
+      @extend .link__branded;
+      color: $colour-brand-behance;
+      &:hover {
+        @include transition;
+        color: $grey-1;
+        background-color: $colour-brand-behance;
+      }
+    }
+  }
+}
+
+.links {
+  &--small {
+    .link__label {
+      display: none;
+    }
+    i.fab {
+      margin: 0;
+    }
+  }
+  &__social {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: $spacing-margin auto;
+    @include breakpoint(md) {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 0;
+    }
+  }
+}
