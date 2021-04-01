@@ -52,9 +52,10 @@ $grey-10: #0D0D0D;
 
 $font-display: "Fraunces", serif;
 $font-text: "Work Sans", sans-serif;
+$font-mono : "Recursive", monospace;
 $modularscale: ( 
   base: 16px, 
-  ratio: 1.25
+  ratio: 1.33
 );
 
 $text-width: 60rem !default;
@@ -66,11 +67,13 @@ $spacing-kerning: normal;
 $spacing-letter-spacing-display: 0.2rem;
 $spacing-letter-spacing-title: 0.1rem;
 $spacing-letter-spacing-text: 0.05rem;
-$spacing-display-line-height: 1.25;
+$spacing-display-line-height: 1.33;
 $spacing-text-line-height: 1.4;
 $spacing-padding: 2rem;
 $spacing-margin: 2rem;
 
-/* ----- Grid ----- */
-$grid-rowheight: 6rem;
-$grid-gutter: 1rem;
+$spacing-xsmall: 0.5rem;
+$spacing-small: 1rem;
+$spacing-medium: 2rem;
+$spacing-large: 4rem;
+$spacing-xlarge: 8rem;
