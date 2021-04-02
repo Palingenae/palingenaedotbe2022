@@ -26,13 +26,14 @@ module.exports = {
       addStyleResource(config.module.rule('scss').oneOf(type))
     })
   },
-  plugins: [{
-    use: "gridsome-plugin-tailwindcss",
-    options: {
-      tailwindConfig: './tailwind.config.js',
-      presetEnvConfig: {},
-      shouldImport: true,
-      shouldTimeTravel: false
-    }
-  },
-]}
+//   plugins: [{
+//     use: "gridsome-plugin-tailwindcss",
+//     options: {
+//       tailwindConfig: './tailwind.config.js',
+//       presetEnvConfig: {},
+//       shouldImport: true,
+//       shouldTimeTravel: false
+//     }
+//   },
+// ]
+}
