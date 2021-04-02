@@ -1,58 +1,14 @@
 /* ----- Colours ----- */
-$colour-main-dark-2: #3E1E1A;
-$colour-main-dark-1: #6D222E;
-$colour-main: #902C3D;
-$colour-main-light-1: #C54459;
-$colour-main-light-2: #D47383;
-
-$warm-alternate-1-dark-2: #5E1E1C;
-$warm-alternate-1-dark-1: #8D5D2A;
-$warm-alternate-1: #B97A37;
-$warm-alternate-1-light-1: #D09B62;
-$warm-alternate-1-light-2: #DEB991;
-
-$warm-alternate-2-dark-2: #907127;
-$warm-alternate-2-dark-1: #C09635;
-$warm-alternate-2: #D2AE5B;
-$warm-alternate-2-light-1: #E0C88F;
-$warm-alternate-2-light-2: #EDE0BF;
-$warm-alternate-2-light-3: #FBF7EF;
-
-$cold-alternate-1-dark-2: #0C0E07;
-$cold-alternate-1-dark-1: #2E361B;
-$cold-alternate-1: #4F5D2F;
-$cold-alternate-1-light-1: #738844;
-$cold-alternate-1-light-2: #95AD5C;
-$cold-alternate-1-light-3: #AFC185;
-
-$cold-alternate-2-dark-2: #120C2E;
-$cold-alternate-2-dark-1: #261961;
-$cold-alternate-2: #392692;
-$cold-alternate-2-light-1: #735DD5;
-$cold-alternate-2-light-2: #9D8DE2;
-
 $colour-brand-behance: #0057ff;
 $colour-brand-github: #000000;
 $colour-brand-twitter: #55acee;
 $colour-brand-instagram: #d82b7e;
 
-/* ----- Greys ----- */
-$grey-1: #F4F4F4;
-$grey-2: #DFDFDF;
-$grey-3: #CACACA;
-$grey-4: #B5B5B5;
-$grey-5: #A0A0A0;
-$grey-6: #737373;
-$grey-7: #5A5A5A;
-$grey-8: #404040;
-$grey-9: #272727;
-$grey-10: #0D0D0D;
-
 /* ----- Typography ----- */
 
-$font-display: "Fraunces", serif;
-$font-text: "Work Sans", sans-serif;
-$font-mono : "Recursive", monospace;
+$font-serif: "Fraunces", serif;
+$font-sans: "Work Sans", sans-serif;
+// $font-mono : "Recursive", monospace;
 $modularscale: ( 
   base: 16px, 
   ratio: 1.33

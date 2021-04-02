@@ -6,12 +6,14 @@
 const path = require ('path');
 
 function addStyleResource(rule) {
-  rule.use('style-resource')
-    .loader('style-resource-loader')
+  rule.use('style-resources')
+    .loader('style-resources-loader')
     .options({
       patterns: [
-        path.resolve(__dirname, './src/assets/styles/_global.scss'),
-        path.resolve(__dirname, './src/assets/styles/_typography.scss'),
+        path.resolve(__dirname, './src/assets/styles/vendor/tailwind.css'),
+        path.resolve(__dirname, './src/assets/styles/vendor/_modularscale.scss'),
+        path.resolve(__dirname, './src/assets/styles/modules/_variables.scss'),
+        path.resolve(__dirname, './src/assets/styles/modules/_typography.scss'),
       ]
     })
 }
@@ -26,14 +28,13 @@ module.exports = {
       addStyleResource(config.module.rule('scss').oneOf(type))
     })
   },
-//   plugins: [{
-//     use: "gridsome-plugin-tailwindcss",
-//     options: {
-//       tailwindConfig: './tailwind.config.js',
-//       presetEnvConfig: {},
-//       shouldImport: true,
-//       shouldTimeTravel: false
-//     }
-//   },
-// ]
-}
+  plugins: [{
+    use: "gridsome-plugin-tailwindcss",
+    options: {
+      tailwindConfig: './tailwind.config.js',
+      presetEnvConfig: {},
+      shouldImport: true,
+      shouldTimeTravel: true
+    }
+  },
+]}

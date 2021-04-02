@@ -5,31 +5,27 @@
 @font-face {
   font-family: "Fraunces"; 
   font-style: normal;
-  src: url('../fonts/fraunces/Fraunces[SOFT,WONK,opsz,wght].woff2');
+  src: url('../assets/fonts/fraunces/Fraunces[SOFT,WONK,opsz,wght].woff2');
 }
 
 @font-face {
   font-family: "Fraunces"; 
   font-style: italic;
-  src: url('../fonts/fraunces/Fraunces-Italic[SOFT,WONK,opsz,wght].woff2');
+  src: url('../assets/fonts/fraunces/Fraunces-Italic[SOFT,WONK,opsz,wght].woff2');
 }
 
 @font-face {
   font-family: "Work Sans"; 
   font-style: normal;
-  src: url('../fonts/work sans/WorkSans[wght].ttf');
+  src: url('../assets/fonts/work sans/WorkSans[wght].ttf');
 }
 
 @font-face {
   font-family: "Work Sans"; 
   font-style: italic;
-  src: url('../fonts/work sans/WorkSans-Italic[wght].ttf');
+  src: url('../assets/fonts/work sans/WorkSans-Italic[wght].ttf');
 }
 
-// @font-face {
-//   font-family: "Public Sans"; 
-//   src: url('~assets/fonts/Public_Sans/PublicSans-VariableFont_wght.ttf') format('truetype');
-// }
 
 /*
 ** Defining typographic variables
@@ -38,8 +34,6 @@ h1,
 h2,
 h3,
 h4 {
-  color: $grey-9;
-  font-family: $font-display;
   line-height: $spacing-display-line-height;
   letter-spacing: $spacing-letter-spacing-title;
   //margin-bottom: $spacing-margin;
@@ -50,52 +44,55 @@ h4 {
 }
 
 h1 {
+  font-family: $font-serif;
   font-size: ms(6);
   font-variation-settings: 'wght' 800;
   margin-bottom: $spacing-medium;
 }
 
 h2 {
+  font-family: $font-serif;
   font-size: ms(5);
   font-variation-settings: 'wght' 600;
-  color: $grey-8;
 }
 
-// h3 {
-//   font-size: ms(4);
-//   font-style: italic;
-//   font-weight: 400; 
-// }
+h3 {
+  font-family: $font-sans;
+  font-size: ms(4);
+  font-variation-settings: 'wght' 500;
+  text-transform: uppercase;
+}
 
-// h4 {
-//   font-size: ms(3);
-// }
+h4 {
+  font-style: italic;
+  font-family: $font-sans;
+  font-size: ms(3);
+}
 
 p {
   font: {
-    family: $font-text;
+    family: $font-sans;
     weight: 400;
     size: ms(1);
     variation-settings: 'wght' 350;
   }
-  color: $grey-9;
-  margin-bottom: $spacing-margin/2;
+  @apply text-grey-900;
+  margin-bottom: $spacing-small;
 }
 
 .paragraph {
   @extend p;
   &--jumbo {
-    color: $grey-8;
+    @apply text-grey-800;
     font-size: ms(1);
     font-weight: 300;
     max-width: $text-width;
-    margin-bottom: $spacing-margin;
+    margin-bottom: $spacing-medium;
   }
 }
 
 .user-interactions {
   @extend p;
-  color: $grey-8;
   font-size: ms(1);
 }
 
@@ -108,7 +105,7 @@ strong,
 span,
 ul,
 li {
-  color: $grey-9;
+  @apply text-grey-900;
   line-height: $spacing-text-line-height;
   letter-spacing: $spacing-letter-spacing-text;
 }

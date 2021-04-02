@@ -1,7 +1,0 @@
-.list {
-  @extend p;
-  &--unordered {
-    @extend .list;
-  }
-  //&--ordered {}
-}
