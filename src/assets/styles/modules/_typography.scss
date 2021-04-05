@@ -42,32 +42,42 @@ h2 {
 
 h1 {
   font-family: $font-serif;
-  font-size: ms(6);
   font-variation-settings: 'wght' 800;
   margin-bottom: $spacing-medium;
   @screen xxl {
-    font-size: ms(8);
+    font-size: ms(7);
   }
   @screen xl {
-    font-size: ms(7);
+    font-size: ms(6);
   }
   @screen lg {
     font-size: ms(6);
+  }
+  @screen md {
+    font-size: ms(5);
+  }
+  @screen sm {
+    font-size: ms(4);
   }
 }
 
 h2 {
   font-family: $font-serif;
-  font-size: ms(5);
   font-variation-settings: 'wght' 600;
   @screen xxl {
-    font-size: ms(7);
+    font-size: ms(6);
   }
   @screen xl {
-    font-size: ms(6);
+    font-size: ms(5);
   }
   @screen lg {
     font-size: ms(5);
+  }
+  @screen md {
+    font-size: ms(4);
+  }
+  @screen sm {
+    font-size: ms(3);
   }
 }
 

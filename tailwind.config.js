@@ -3,18 +3,18 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     screens: {
-      'xxl': '1536px',
-      'xl': '1280px',
-      'lg': '1024px',
-      'md': '768px',
-      'sm': '640px'
+      'xxl': {'max': '160rem'},
+      'xl': {'max': '120rem'},
+      'lg': {'max': '90rem'},
+      'md': {'max': '64rem'},
+      'sm': {'max': '48rem'}
     },
     spacing: {
-      xsmall: '0.5rem',
-      small: '1rem',
-      medium: '2rem',
-      large: '4rem',
-      xlarge: '8rem'
+      'xsmall': '0.5rem',
+      'small': '1rem',
+      'medium': '2rem',
+      'large': '4rem',
+      'xlarge': '8rem'
     },
     colors: {
       transparent: 'transparent',

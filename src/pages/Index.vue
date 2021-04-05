@@ -48,16 +48,24 @@ export default {
         flex-col
         justify-center
         content-start
-        items-start;
+        items-start
+        p-xlarge;
     flex-flow: column nowrap;
     height: 100vh;
-    padding: $spacing-xlarge;
+    @screen md {
+        @apply p-large;
+    }
+    @screen sm {
+        @apply p-medium;
+    }
     &__greeting {
+        @apply mb-medium;
         font-weight: 700;
-        margin-bottom: $spacing-small;
     }
     &__introduction {
-        @apply text-coldOne;
+        @apply 
+            text-coldOne
+            mb-medium;
         font-variation-settings: 'wght' 300;
         letter-spacing: -0.1rem;
         // color: $cold-alternate-1;
@@ -69,14 +77,15 @@ export default {
         margin-bottom: $spacing-large;
         line-height: $spacing-display-line-height;
         @screen xxl {
-          font-size: ms(6);
+            font-size: ms(5);
         }
         @screen xl {
-          font-size: ms(5);
+            font-size: ms(4);
         }
         @screen lg {
-          font-size: ms(4);
+            font-size: ms(3);
         }
+
     }
     &__CTA--scroll {
         margin-top: $spacing-large;
