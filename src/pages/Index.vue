@@ -43,11 +43,13 @@ export default {
 
 <style lang="scss">
 .hero {
-    display: flex;
+    @apply
+        flex
+        flex-col
+        justify-center
+        content-start
+        items-start;
     flex-flow: column nowrap;
-    justify-content: center;
-    align-content: flex-start;
-    align-items: flex-start;
     height: 100vh;
     padding: $spacing-xlarge;
     &__greeting {
