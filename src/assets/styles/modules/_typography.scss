@@ -31,14 +31,11 @@
 ** Defining typographic variables
 */
 h1,
-h2,
-h3,
-h4 {
+h2 {
   line-height: $spacing-display-line-height;
   letter-spacing: $spacing-letter-spacing-title;
   //margin-bottom: $spacing-margin;
-  font-variation-settings: 'SOFT' 10, 
-                           'wght' 500, 
+  font-variation-settings: 'SOFT' 20,
                            'WONK' 1, 
                            'opsz' 80;
 }
@@ -48,12 +45,30 @@ h1 {
   font-size: ms(6);
   font-variation-settings: 'wght' 800;
   margin-bottom: $spacing-medium;
+  @screen xxl {
+    font-size: ms(8);
+  }
+  @screen xl {
+    font-size: ms(7);
+  }
+  @screen lg {
+    font-size: ms(6);
+  }
 }
 
 h2 {
   font-family: $font-serif;
   font-size: ms(5);
   font-variation-settings: 'wght' 600;
+  @screen xxl {
+    font-size: ms(7);
+  }
+  @screen xl {
+    font-size: ms(6);
+  }
+  @screen lg {
+    font-size: ms(5);
+  }
 }
 
 h3 {
@@ -106,19 +121,11 @@ span,
 ul,
 li {
   @apply text-grey-900;
+  font-family: $font-sans;
   line-height: $spacing-text-line-height;
   letter-spacing: $spacing-letter-spacing-text;
 }
 
-.bold,
-b,
-strong {
-  font-weight: 700;
-}
-
-.semibold {
-  font-weight: 500;
-}
 
 .italic,
 i,

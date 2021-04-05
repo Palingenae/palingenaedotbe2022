@@ -4,25 +4,40 @@
     <!-- Learn how to use images here: https://gridsome.org/docs/images -->
 
     <section class="hero">
-      <h1 class="hero__greeting">Bonjour !</h1>
+      <h1 class="hero__greeting">
+        {{ hero.greetings }}
+      </h1>
 
-      <h2 class="hero__introduction">Je m'appelle Olivia.</h2>
+      <h2 class="hero__introduction"> 
+        {{ hero.introduction }} 
+      </h2>
 
-      <p class="hero__description">
-        Je suis une développeuse Web <br />
-        et Photographe actuellement <br />
-        à Nantes.
+      <p class="hero__description" v-html="hero.description">
+        {{ hero.description }}
       </p>
+
+      <social-links/>
     </section>
     
   </Layout>
 </template>
 
 <script>
+import socialLinks from '../components/SocialLinks.vue'
 export default {
+  data() {
+    return {
+      hero: {
+        greetings: 'Bonjour !',
+        introduction: "Je m'appelle Olivia.",
+        description: "Je suis une développeuse Web <br> et Photographe actuellement <br> à Nantes."
+      }
+    }
+  },
+  components: { socialLinks },
   metaInfo: {
     title: 'Greetings'
-  }
+  },
 }
 </script>
 
@@ -41,7 +56,6 @@ export default {
     }
     &__introduction {
         @apply text-coldOne;
-        @extend h2;
         font-variation-settings: 'wght' 300;
         letter-spacing: -0.1rem;
         // color: $cold-alternate-1;
@@ -50,9 +64,17 @@ export default {
     }
     &__description {
         font-variation-settings: 'wght' 250;
-        font-size: ms(4);
         margin-bottom: $spacing-large;
         line-height: $spacing-display-line-height;
+        @screen xxl {
+          font-size: ms(6);
+        }
+        @screen xl {
+          font-size: ms(5);
+        }
+        @screen lg {
+          font-size: ms(4);
+        }
     }
     &__CTA--scroll {
         margin-top: $spacing-large;

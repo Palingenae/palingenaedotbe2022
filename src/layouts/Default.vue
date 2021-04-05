@@ -14,7 +14,11 @@ query {
 
 <style lang="scss">
 ::selection {
-  @apply bg-main-700 text-grey-100 dark:bg-main-200 dark:text-grey-900;
+  @apply 
+    bg-main-700 
+    text-grey-100 
+    dark:bg-main-200 
+    dark:text-grey-900;
 }
 
 html {
