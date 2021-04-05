@@ -85,6 +85,9 @@ export default {
         @screen lg {
             font-size: ms(3);
         }
+        @screen md {
+            font-size: ms(3);
+        }
 
     }
     &__CTA--scroll {

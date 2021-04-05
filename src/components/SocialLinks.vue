@@ -9,10 +9,24 @@
     @apply
         flex
         justify-between;
+    @screen md {
+        @apply 
+            flex-col
+            items-center;
+    }
     width: 30%;
+    @screen lg {
+        width: 50%;
+    }
+    @screen md {
+        width: 100%;
+    }
     a {
         font-family: $font-sans;
         font-size: ms(1);
+        @screen md {
+            @apply mb-medium;
+        }
     }
 }
 </style>
