@@ -3,11 +3,11 @@ module.exports = {
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     screens: {
-      xxl: '1536px',
-      xl: '1280px',
-      lg: '1024px',
-      md: '768px',
-      sm: '640px'
+      'xxl': '1536px',
+      'xl': '1280px',
+      'lg': '1024px',
+      'md': '768px',
+      'sm': '640px'
     },
     spacing: {
       xsmall: '0.5rem',
