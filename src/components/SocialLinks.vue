@@ -1,6 +1,6 @@
 <template>
     <div class="social-links">
-        <a v-for="socialProfile in socialProfiles" :key="socialProfile.name" href="socialProfile.link" target="_blank" rel="noopener">{{ socialProfile.name }}</a>
+        <a v-for="socialProfile in socialProfiles" :key="socialProfile.name" :href='socialProfile.link' target="_blank" rel="noopener">{{ socialProfile.name }}</a>
     </div>
 </template>
 
@@ -9,7 +9,6 @@
     @apply
         flex
         justify-between;
-
     width: 30%;
     @screen lg {
         width: 50%;
