@@ -1,5 +1,8 @@
 module.exports = {
-  purge: [],
+  purge: [
+    './src/**/*.vue',
+    './src/**/assets/**/*.scss'
+  ],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     screens: {
