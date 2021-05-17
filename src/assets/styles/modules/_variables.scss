@@ -1,8 +1,47 @@
 /* ----- Colours ----- */
-$colour-brand-behance: #0057ff;
-$colour-brand-github: #000000;
-$colour-brand-twitter: #55acee;
-$colour-brand-instagram: #d82b7e;
+$colour-main-900: #3E1E1A;
+$colour-main-700: #6D222E;
+$colour-main: #902C3D;
+$colour-main-300: #C54459;
+$colour-main-200: #D47383;
+
+$colour-warmOne-900: #907127;
+$colour-warmOne-700: #C09635;
+$colour-warmOne: #D2AE5B;
+$colour-warmOne-300: #E0C88F;
+$colour-warmOne-200: #EDE0BF;
+$colour-warmOne-100: #FBF7EF;
+
+$colour-warmTwo-900 : #5E1E1C;
+$colour-warmTwo-700 : #8D5D2A;
+$colour-warmTwo : #B97A37;
+$colour-warmTwo-300 : #D09B62;
+$colour-warmTwo-200 : #DEB991;
+
+$colour-coldOne-900: #0C0E07;
+$colour-coldOne-700: #2E361B;
+$colour-coldOne: #4F5D2F;
+$colour-coldOne-300: #738844;
+$colour-coldOne-200: #95AD5C;
+$colour-coldOne-100: #AFC185;
+
+$colour-coldTwo-900: #120C2E;
+$colour-coldTwo-700: #261961;
+$colour-coldTwo: #392692;
+$colour-coldTwo-300: #735DD5;
+$colour-coldTwo-200: #9D8DE2;
+
+
+$grey-100: #F4F4F4;
+$grey-200: #DFDFDF;
+$grey-300: #CACACA;
+$grey-400: #B5B5B5;
+$grey-500: #A0A0A0;
+$grey-600: #737373;
+$grey-700: #5A5A5A;
+$grey-800: #404040;
+$grey-900: #272727;
+$grey-1000: #0D0D0D;
 
 /* ----- Typography ----- */
 
@@ -16,7 +55,6 @@ $modularscale: (
 
 $text-width: 60rem !default;
 $block-width: 90rem !default;
-
 
 /* ----- Spacing ----- */
 $spacing-kerning: normal;
