@@ -9,31 +9,33 @@
     @apply
         flex
         justify-between;
+    display: flex;
+    justify-content: space-between;
     width: 30%;
-    @screen lg {
-        width: 50%;
-    }
-    @screen md {
-        width: 70%;
-    }    
-    @screen sm {
-        @apply 
-            flex-col
-            items-center;
-        width: 100%;
-    }
+    // @screen lg {
+    //     width: 50%;
+    // }
+    // @screen md {
+    //     width: 70%;
+    // }    
+    // @screen sm {
+    //     @apply 
+    //         flex-col
+    //         items-center;
+    //     width: 100%;
+    // }
     a {
         font-family: $font-sans;
         font-size: ms(1);
-        @screen xxl {
-            font-size: ms(2);
-        }
-        @screen xl {
-            font-size: ms(1);
-        }
-        @screen sm {
-            @apply mb-medium;
-        }
+        // @screen xxl {
+        //     font-size: ms(2);
+        // }
+        // @screen xl {
+        //     font-size: ms(1);
+        // }
+        // @screen sm {
+        //     @apply mb-medium;
+        // }
     }
 }
 </style>

@@ -43,51 +43,51 @@ export default {
 
 <style lang="scss">
 .hero {
-    @apply
-        flex
-        flex-col
-        justify-center
-        content-start
-        items-start
-        p-xlarge;
+    display: flex;
     flex-flow: column nowrap;
+    justify-content: center;
+    align-content: flex-start;
+    align-items: flex-start;
     height: 100vh;
-    @screen md {
-        @apply p-large;
-    }
-    @screen sm {
-        @apply p-medium;
-    }
+    padding: $spacing-xlarge;
+    // @screen md {
+    //     @apply p-large;
+    // }
+    // @screen sm {
+    //     @apply p-medium;
+    // }
     &__greeting {
-        @apply mb-medium;
         font-weight: 700;
+        margin-bottom: $spacing-medium;
+        font-size: ms(6);
     }
     &__introduction {
-        @apply 
-            text-coldOne
-            mb-medium;
+        color: $colour-coldOne;
         font-variation-settings: 'wght' 300;
         letter-spacing: -0.1rem;
         // color: $cold-alternate-1;
         margin-bottom: $spacing-medium;
         line-height: $spacing-display-line-height;
+        margin-bottom: $spacing-medium;
+        font-size: ms(5);
     }
     &__description {
         font-variation-settings: 'wght' 250;
         margin-bottom: $spacing-large;
         line-height: $spacing-display-line-height;
-        @screen xxl {
-            font-size: ms(5);
-        }
-        @screen xl {
-            font-size: ms(4);
-        }
-        @screen lg {
-            font-size: ms(3);
-        }
-        @screen md {
-            font-size: ms(3);
-        }
+        font-size: ms(4);
+        // @screen xxl {
+        //     font-size: ms(5);
+        // }
+        // @screen xl {
+        //     font-size: ms(4);
+        // }
+        // @screen lg {
+        //     font-size: ms(3);
+        // }
+        // @screen md {
+        //     font-size: ms(3);
+        // }
 
     }
     &__CTA--scroll {

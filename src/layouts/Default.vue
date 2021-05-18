@@ -14,15 +14,12 @@ query {
 
 <style lang="scss">
 ::selection {
-  @apply 
-    bg-main-700 
-    text-grey-100 
-    dark:bg-main-200 
-    dark:text-grey-900;
+    background-color: $colour-main-700;
+    color: $grey-200;
 }
 
 html {
-    @apply bg-warmOne-100;
+    background-color: $colour-warmOne-100;
     font-family: $font-sans, sans-serif;
     font-size: 1em;
     -ms-text-size-adjust: 100%;
