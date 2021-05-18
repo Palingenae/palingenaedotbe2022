@@ -10,7 +10,6 @@ function addStyleResource(rule) {
     .loader('style-resources-loader')
     .options({
       patterns: [
-        // path.resolve(__dirname, './src/assets/styles/vendor/tailwind.css'),
         path.resolve(__dirname, './src/assets/styles/vendor/_modularscale.scss'),
         path.resolve(__dirname, './src/assets/styles/modules/_variables.scss'),
         path.resolve(__dirname, './src/assets/styles/modules/_typography.scss'),
@@ -27,14 +26,5 @@ module.exports = {
     types.forEach(type => {
       addStyleResource(config.module.rule('scss').oneOf(type))
     })
-  },
-  plugins: [{
-    use: "gridsome-plugin-tailwindcss",
-    options: {
-      tailwindConfig: './tailwind.config.js',
-      presetEnvConfig: {},
-      shouldImport: true,
-      shouldTimeTravel: true
-    }
-  },
-]}
+  }
+}
