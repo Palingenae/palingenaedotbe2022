@@ -44,41 +44,11 @@ h1 {
   font-family: $font-serif;
   font-variation-settings: 'wght' 800;
   margin-bottom: $spacing-medium;
-  @screen xxl {
-    font-size: ms(7);
-  }
-  @screen xl {
-    font-size: ms(6);
-  }
-  @screen lg {
-    font-size: ms(6);
-  }
-  @screen md {
-    font-size: ms(6);
-  }
-  @screen sm {
-    font-size: ms(4);
-  }
 }
 
 h2 {
   font-family: $font-serif;
   font-variation-settings: 'wght' 600;
-  @screen xxl {
-    font-size: ms(6);
-  }
-  @screen xl {
-    font-size: ms(5);
-  }
-  @screen lg {
-    font-size: ms(5);
-  }
-  @screen md {
-    font-size: ms(5);
-  }
-  @screen sm {
-    font-size: ms(3);
-  }
 }
 
 h3 {
@@ -101,14 +71,14 @@ p {
     size: ms(1);
     variation-settings: 'wght' 350;
   }
-  @apply text-grey-900;
+  color: $grey-800;
   margin-bottom: $spacing-small;
 }
 
 .paragraph {
   @extend p;
   &--jumbo {
-    @apply text-grey-800;
+    $color: $grey-800;
     font-size: ms(1);
     font-weight: 300;
     max-width: $text-width;
@@ -130,25 +100,14 @@ strong,
 span,
 ul,
 li {
-  @apply text-grey-900;
+  color: $grey-900;
   font-family: $font-sans;
   line-height: $spacing-text-line-height;
   letter-spacing: $spacing-letter-spacing-text;
 }
 
-
 .italic,
 i,
 em {
   font-style: italic;
-}
-
-// a {
-//   color: $colour-1;
-// }
-
-/* ----- I'll remove that whenever a new component SCSS file would be needed for icons----- */
-i.fab,
-i.fas {
-  margin-right: $spacing-margin/2;
 }
