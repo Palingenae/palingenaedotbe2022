@@ -50,16 +50,27 @@ export default {
     align-items: flex-start;
     height: 100vh;
     padding: $spacing-xlarge;
-    // @screen md {
-    //     @apply p-large;
-    // }
-    // @screen sm {
-    //     @apply p-medium;
-    // }
+    @include medium-display {
+        padding: $spacing-large;
+    }
+    @include small-display {
+        padding: $spacing-medium;
+    }
     &__greeting {
         font-weight: 700;
         margin-bottom: $spacing-medium;
-        font-size: ms(6);
+        @include very-very-large-display {
+            font-size: ms(7);
+        }
+        @include very-large-display {
+            font-size: ms(6);
+        }
+        @include large-display {
+            font-size: ms(5);
+        }
+        @include medium-display {
+            font-size: ms(4);
+        }
     }
     &__introduction {
         color: $colour-coldOne;
@@ -69,25 +80,35 @@ export default {
         margin-bottom: $spacing-medium;
         line-height: $spacing-display-line-height;
         margin-bottom: $spacing-medium;
-        font-size: ms(5);
+        @include very-very-large-display {
+            font-size: ms(6);
+        }
+        @include very-large-display {
+            font-size: ms(5);
+        }
+        @include large-display {
+            font-size: ms(4);
+        }
+        @include medium-display {
+            font-size: ms(3);
+        }
     }
     &__description {
         font-variation-settings: 'wght' 250;
         margin-bottom: $spacing-large;
         line-height: $spacing-display-line-height;
-        font-size: ms(4);
-        // @screen xxl {
-        //     font-size: ms(5);
-        // }
-        // @screen xl {
-        //     font-size: ms(4);
-        // }
-        // @screen lg {
-        //     font-size: ms(3);
-        // }
-        // @screen md {
-        //     font-size: ms(3);
-        // }
+        @include very-very-large-display {
+            font-size: ms(5);
+        }
+        @include very-large-display {
+            font-size: ms(4);
+        }
+        @include large-display {
+            font-size: ms(3);
+        }
+        @include medium-display {
+            font-size: ms(3);
+        }
 
     }
     &__CTA--scroll {

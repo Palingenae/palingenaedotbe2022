@@ -6,36 +6,32 @@
 
 <style lang="scss">
 .social-links {
-    @apply
-        flex
-        justify-between;
     display: flex;
     justify-content: space-between;
     width: 30%;
-    // @screen lg {
-    //     width: 50%;
-    // }
-    // @screen md {
-    //     width: 70%;
-    // }    
-    // @screen sm {
-    //     @apply 
-    //         flex-col
-    //         items-center;
-    //     width: 100%;
-    // }
+    @include large-display {
+        width: 50%;
+    }
+    @include medium-display {
+        width: 70%;
+    }    
+    @include small-display {
+        flex-flow: column;
+        align-items: center;
+        width: 100%;
+    }
     a {
         font-family: $font-sans;
         font-size: ms(1);
-        // @screen xxl {
-        //     font-size: ms(2);
-        // }
-        // @screen xl {
-        //     font-size: ms(1);
-        // }
-        // @screen sm {
-        //     @apply mb-medium;
-        // }
+        @include very-very-large-display {
+            font-size: ms(2);
+        }
+        @include very-large-display {
+            font-size: ms(1);
+        }
+        @include small-display {
+            margin-bottom: $spacing-medium
+        }
     }
 }
 </style>

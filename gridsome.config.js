@@ -12,6 +12,7 @@ function addStyleResource(rule) {
       patterns: [
         path.resolve(__dirname, './src/assets/styles/vendor/_modularscale.scss'),
         path.resolve(__dirname, './src/assets/styles/modules/_variables.scss'),
+        path.resolve(__dirname, './src/assets/styles/modules/_breakpoints.scss'),
         path.resolve(__dirname, './src/assets/styles/modules/_typography.scss'),
       ]
     })
