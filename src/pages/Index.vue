@@ -54,6 +54,7 @@ export default {
         padding: $spacing-large;
     }
     @include small-display {
+        justify-content: flex-start;
         padding: $spacing-medium;
     }
     &__greeting {
