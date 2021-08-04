@@ -3,95 +3,115 @@
 */
 
 @font-face {
-  font-family: "Fraunces"; 
+  font-family: "Fraunces";
   font-style: normal;
   src: url('../assets/fonts/fraunces/Fraunces[SOFT,WONK,opsz,wght].woff2');
 }
 
 @font-face {
-  font-family: "Fraunces"; 
+  font-family: "Fraunces";
   font-style: italic;
   src: url('../assets/fonts/fraunces/Fraunces-Italic[SOFT,WONK,opsz,wght].woff2');
 }
 
 @font-face {
-  font-family: "Work Sans"; 
+  font-family: "Work Sans";
   font-style: normal;
-  src: url('../assets/fonts/work sans/WorkSans[wght].ttf');
+  src: url('../assets/fonts/work-sans/WorkSans[wght].ttf');
 }
 
 @font-face {
-  font-family: "Work Sans"; 
+  font-family: "Work Sans";
   font-style: italic;
-  src: url('../assets/fonts/work sans/WorkSans-Italic[wght].ttf');
+  src: url('../assets/fonts/work-sans/WorkSans-Italic[wght].ttf');
 }
 
 
 /*
 ** Defining typographic variables
 */
+
 h1,
 h2 {
   line-height: $spacing-display-line-height;
   letter-spacing: $spacing-letter-spacing-title;
-  //margin-bottom: $spacing-margin;
-  font-variation-settings: 'SOFT' 20,
-                           'WONK' 1, 
-                           'opsz' 80;
 }
 
 h1 {
   font-family: $font-serif;
-  font-variation-settings: 'wght' 800;
+  font-variation-settings:
+    'wght' 800,
+    'SOFT' 30,
+    'WONK' 1,
+    'opsz' 80;
   margin-bottom: $spacing-medium;
-  // @screen xxl {
-  //   font-size: ms(7);
-  // }
-  // @screen xl {
-  //   font-size: ms(6);
-  // }
-  // @screen lg {
-  //   font-size: ms(6);
-  // }
-  // @screen md {
-  //   font-size: ms(6);
-  // }
-  // @screen sm {
-  //   font-size: ms(4);
-  // }
+  @include very-very-large-display {
+    font-size: ms(7);
+  }
+
+  @include very-large-display {
+    font-size: ms(6);
+  }
+
+  @include large-display {
+    font-size: ms(6);
+  }
+
+  @include medium-display {
+    font-size: ms(6);
+  }
+
+  @include small-display {
+    font-size: ms(4);
+  }
 }
 
 h2 {
   font-family: $font-serif;
-  font-variation-settings: 'wght' 600;
-  // @screen xxl {
-  //   font-size: ms(6);
-  // }
-  // @screen xl {
-  //   font-size: ms(5);
-  // }
-  // @screen lg {
-  //   font-size: ms(5);
-  // }
-  // @screen md {
-  //   font-size: ms(5);
-  // }
-  // @screen sm {
-  //   font-size: ms(3);
-  // }
+  font-variation-settings:
+    'wght' 600,
+    'SOFT' 30,
+    'WONK' 1,
+    'opsz' 80;
+  margin-bottom: $spacing-medium;
+  @include very-very-large-display {
+    font-size: ms(6);
+  }
+
+  @include very-large-display {
+    font-size: ms(5);
+  }
+
+  @include large-display {
+    font-size: ms(5);
+  }
+
+  @include medium-display {
+    font-size: ms(4);
+  }
+
+  @include small-display {
+    font-size: ms(3);
+  }
 }
 
 h3 {
   font-family: $font-sans;
-  font-size: ms(4);
-  font-variation-settings: 'wght' 500;
-  text-transform: uppercase;
+  font-size: ms(3);
+  font-variation-settings: 'wght' 600;
+  margin-bottom: $spacing-large;
+  @include small-display {
+    font-size: ms(2);
+  }
 }
 
 h4 {
-  font-style: italic;
   font-family: $font-sans;
-  font-size: ms(3);
+  font-size: ms(2);
+  margin-bottom: $spacing-medium;
+  @include small-display {
+    font-size: ms(1);
+  }
 }
 
 p {
@@ -107,9 +127,16 @@ p {
 
 .paragraph {
   @extend p;
+
+  &--lead {
+    font-size: ms(1);
+    font-variation-settings: 'wght' 600;
+    font-style: italic;
+  }
+
   &--jumbo {
     color: $grey-800;
-    font-size: ms(1);
+    font-size: ms(2);
     font-weight: 300;
     max-width: $text-width;
     margin-bottom: $spacing-medium;
@@ -121,7 +148,14 @@ p {
   font-size: ms(1);
 }
 
+.section-title {
+  @extend p;
+  font-size: ms(2);
+  font-variation-settings: 'wght' 500;
+}
+
 /* ----- Giving all labor elements the same line-height and letter spacing nomatter the context ----- */
+
 a,
 b,
 p,
@@ -136,19 +170,8 @@ li {
   letter-spacing: $spacing-letter-spacing-text;
 }
 
-
 .italic,
 i,
 em {
   font-style: italic;
-}
-
-// a {
-//   color: $colour-1;
-// }
-
-/* ----- I'll remove that whenever a new component SCSS file would be needed for icons----- */
-i.fab,
-i.fas {
-  margin-right: $spacing-margin/2;
 }

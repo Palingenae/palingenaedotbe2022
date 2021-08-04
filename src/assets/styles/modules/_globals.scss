@@ -1,0 +1,21 @@
+*,
+::after,
+::before {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+::selection {
+  background-color: $colour-main-700;
+  color: $grey-100;
+}
+
+body {
+  display: flex;
+  flex-flow: column;
+  font-family: $font-sans;
+  font-size: 1em;
+  font-kerning: normal;
+  color: $grey-900;
+  background-color: $colour-warmOne-100;
+}

@@ -1,0 +1,53 @@
+.navigation {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: $spacing-medium $spacing-xlarge;
+
+  &__link {
+    font-size: ms(1);
+    text-decoration: none;
+  }
+
+  &--site {
+    @extend .navigation;
+    background-color: $colour-warmOne-100;
+  }
+
+  &__logo {
+
+    &__link {
+      @extend .navigation__link;
+      font-variation-settings: 'wght' 700;
+    }
+  }
+
+  &__menu {
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    @include small-display {
+      display: none;
+    }
+
+    &__link {
+      @extend .navigation__link;
+      font-variation-settings: 'wght' 350;
+
+      &:not(:first-of-type) {
+        margin-left: $spacing-large;
+      }
+    }
+  }
+  @include medium-display {
+    padding: $spacing-medium $spacing-large;
+  }
+  @include medium-display {
+    position: fixed;
+    padding: $spacing-medium $spacing-large;
+  }
+  @include small-display {
+    padding: $spacing-medium;
+  }
+}
