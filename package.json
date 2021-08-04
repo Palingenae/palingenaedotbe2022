@@ -6,17 +6,29 @@
     "build": "npx @11ty/eleventy"
   },
   "dependencies": {
-    "sockjs-client": "^1.5.1"
+    "@11ty/eleventy": "^0.12.1",
+    "eleventy-plugin-purgecss": "^0.1.1"
   },
   "devDependencies": {
-    "@fullhuman/postcss-purgecss": "^4.0.3",
-    "autoprefixer": "^10.2.5",
-    "node-sass": "^5.0.0",
-    "postcss": "^8.2.9",
-    "postcss-import": "^12.0.1",
-    "postcss-nested": "^4.2.3",
-    "postcss-preset-env": "^6.7.0",
-    "sass-loader": "^10.1.1",
-    "style-resources-loader": "^1.4.1"
-  }
+    "eleventy-plugin-sass": "^1.2.0",
+    "node-sass": "^6.0.1",
+    "sass": "^1.37.5",
+    "sass-loader": "^12.1.0",
+    "stylelint": "^13.13.1",
+    "stylelint-scss": "^3.20.1"
+  },
+  "description": "![Netlify](https://img.shields.io/badge/-Netlify-00C7B7?style=flat-square&logo=Netlify&logoColor=white)\r ![Gridsome](https://img.shields.io/badge/-Gridsome-00A672?style=flat-square&logo=gridsome&logoColor=white)\r ![Sass](https://img.shields.io/badge/-Sass-CC6699?style=flat-square&logo=sass&logoColor=white)",
+  "version": "1.0.0",
+  "main": ".eleventy.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Palingenae/palingenaedotbe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Palingenae/palingenaedotbe/issues"
+  },
+  "homepage": "https://github.com/Palingenae/palingenaedotbe#readme"
 }
