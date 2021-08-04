@@ -2,12 +2,10 @@
   "name": "palingenaedotbe",
   "private": true,
   "scripts": {
-    "develop": "gridsome develop",
-    "explore": "gridsome explore",
-    "build": "gridsome build"
+    "dev": "npx @11ty/eleventy --serve",
+    "build": "npx @11ty/eleventy"
   },
   "dependencies": {
-    "gridsome": "^0.7.0",
     "sockjs-client": "^1.5.1"
   },
   "devDependencies": {
