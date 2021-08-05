@@ -1,0 +1,12 @@
+.main {
+  max-width: $block-width;
+  padding: 0 $spacing-xlarge;
+  margin-top: $spacing-xlarge;
+  @include medium-display {
+    padding: 0 $spacing-large;
+  }
+  @include small-display {
+    height: auto;
+    padding: 0 $spacing-medium;
+  }
+}

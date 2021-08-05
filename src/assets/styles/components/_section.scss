@@ -1,0 +1,29 @@
+.section {
+  padding: $spacing-large 0;
+
+  &--about {
+    @extend .section;
+    flex-flow: column nowrap;
+
+    &__columns {
+      display: flex;
+      flex-flow: row nowrap;
+      justify-content: space-between;
+      margin-bottom: $spacing-large;
+      @include medium-display {
+        flex-flow: column;
+      }
+    }
+  }
+
+  &__column {
+    margin-bottom: $spacing-medium;
+  }
+
+  &--comments {
+    @extend .section;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: $spacing-large;
+  }
+}

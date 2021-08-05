@@ -1,0 +1,30 @@
+.link {
+  font-size: ms(1);
+  display: inline-flex;
+  text-decoration: none;
+  margin-bottom: $spacing-small;
+}
+//   &--in {
+//     @extend .link;
+
+//     &::after {
+//       content: "\f061";
+//       font-family: $font-icon-solid;
+//       font-size: inherit;
+//       text-decoration: none;
+//       margin-left: $spacing-small;
+//     }
+//   }
+
+//   &--out {
+//     @extend .link;
+
+//     &::after {
+//       content: "\f35d";
+//       font-family: $font-icon-solid;
+//       font-size: inherit;
+//       text-decoration: none;
+//       margin-left: $spacing-small;
+//     }
+//   }
+// }

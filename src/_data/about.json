@@ -1,0 +1,28 @@
+{
+    "hero": {
+        "greetings": "Bonjour !",
+        "introduction": "Je m'appelle Olivia",
+        "description": "Je suis une développeuse Web et Photographe actuellement à Nantes."
+    },
+    "about": [],
+    "skills": {
+        "design": [
+            "Figma",
+            "Affinity Designer"
+        ],
+        "front-end": [
+            "HTML + CSS",
+            "SASS (with BEM)",
+            "JavaScript ES6"
+        ],
+        "back-end": [
+            "PHP",
+            "Symfony",
+            "Construction d'API"
+        ],
+        "infrastructure": [
+            "Docker"
+        ]
+    }
+    
+}
