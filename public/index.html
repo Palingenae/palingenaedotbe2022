@@ -1,9 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>Palingenae
-    /homepage
-</title>
+        <title>Palingenae</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta charset="UTF-8">
         <meta lang="fr">
@@ -11,11 +9,23 @@
         
     </head>
     <body>
-        <main class="main">
-            
-    <h1>Chupa Chups</h1>
+        
+    <section class="hero">
+      <h1 class="hero__greeting">
+        Bonjour !
+      </h1>
 
-        </main>
+      <h2 class="hero__introduction"> 
+        Je m'appelle Olivia. 
+      </h2>
+
+      <p class="hero__description" v-html="hero.description">
+        Je suis une développeuse Web <br> et Photographe actuellement <br> à Nantes.
+      </p>
+
+      <social-links/>
+    </section>
+
     </body>
 </html>
 

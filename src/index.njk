@@ -1,9 +1,19 @@
 {% extends "./layouts/base.njk" %}
 
-{% block title %}
-    /homepage
-{% endblock %}
-
 {% block body %}
-    <h1>Chupa Chups</h1>
+    <section class="hero">
+      <h1 class="hero__greeting">
+        Bonjour !
+      </h1>
+
+      <h2 class="hero__introduction"> 
+        Je m'appelle Olivia. 
+      </h2>
+
+      <p class="hero__description" v-html="hero.description">
+        Je suis une développeuse Web <br> et Photographe actuellement <br> à Nantes.
+      </p>
+
+      <social-links/>
+    </section>
 {% endblock %}
