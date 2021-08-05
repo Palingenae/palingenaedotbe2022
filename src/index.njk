@@ -3,17 +3,15 @@
 {% block body %}
     <section class="hero">
       <h1 class="hero__greeting">
-        Bonjour !
+        {{ about.hero.greetings }}
       </h1>
 
-      <h2 class="hero__introduction"> 
-        Je m'appelle Olivia. 
+      <h2 class="hero__introduction">
+        {{ about.hero.introduction }}
       </h2>
 
-      <p class="hero__description" v-html="hero.description">
-        Je suis une développeuse Web <br> et Photographe actuellement <br> à Nantes.
+      <p class="hero__description">
+        {{ about.hero.description }}
       </p>
-
-      <social-links/>
     </section>
 {% endblock %}
