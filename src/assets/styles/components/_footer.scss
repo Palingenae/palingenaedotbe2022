@@ -8,7 +8,7 @@
     justify-content: space-between;
     padding: $spacing-small $spacing-xlarge;
     @include medium-display {
-      flex-flow: column nowrap;
+      flex-flow: column-reverse nowrap;
       align-items: center;
       justify-content: center;
       justify-items: center;
@@ -50,8 +50,7 @@
 
   &__navigation__menu {
     display: flex;
-    flex-grow: 1;
-    max-width: 50%;
+    width: 40%;
     justify-content: space-between;
 
     .footer__navigation__link {

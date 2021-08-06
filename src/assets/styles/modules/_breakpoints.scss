@@ -1,5 +1,5 @@
 @mixin very-very-large-display {
-  @media screen and (min-width: #{$screen-size-xxl}) {
+  @media screen and (min-width: #{$screen-size-xl}) {
     @content;
   }
 }
