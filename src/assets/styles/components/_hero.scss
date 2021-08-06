@@ -4,13 +4,13 @@
   justify-content: center;
   align-content: flex-start;
   align-items: flex-start;
-  height: 100vh;
-  padding: $spacing-xlarge;
+  // height: 100vh;
+  padding: 0 $spacing-xlarge;
   @include medium-display {
-    padding: $spacing-large;
+    padding: 0 $spacing-large;
   }
   @include small-display {
-    padding: $spacing-medium;
+    padding: 0 $spacing-medium;
   }
 
   &__greeting {
@@ -67,6 +67,9 @@
     }
     @include medium-display {
       font-size: ms(3);
+    }
+    @include small-display {
+      font-size: ms(2);
     }
 
   }

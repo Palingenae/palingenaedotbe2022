@@ -1,0 +1,8 @@
+.article {
+  max-width: $text-width;
+  margin-bottom: $spacing-xlarge;
+
+  &--biography {
+    @extend .article;
+  }
+}

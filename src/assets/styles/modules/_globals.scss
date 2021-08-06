@@ -12,7 +12,9 @@
 
 body {
   display: flex;
-  flex-flow: column;
+  flex-flow: column nowrap;
+  min-height: 100vh;
+  justify-content: space-between;
   font-family: $font-sans;
   font-size: 1em;
   font-kerning: normal;

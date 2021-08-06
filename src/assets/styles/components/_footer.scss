@@ -49,6 +49,10 @@
   }
 
   &__navigation__menu {
+    display: flex;
+    flex-grow: 1;
+    max-width: 50%;
+    justify-content: space-between;
 
     .footer__navigation__link {
       @extend .navigation__link;
@@ -63,6 +67,7 @@
       justify-content: center;
       align-items: center;
       text-align: center;
+      margin-bottom: $spacing-medium;
 
       .footer__navigation__link {
         display: flex;
