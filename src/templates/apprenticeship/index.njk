@@ -1,0 +1,57 @@
+---
+permalink: "apprenticeship/"
+title: "Alternance"
+---
+
+{% extends "../../_includes/_layouts/base.njk" %}
+
+{% block title %}
+    /apprenticeship
+{% endblock %}
+
+{% block body %}
+    <main class="main">
+        <header class="header">
+            <p class="header__context">{{ title }}</p>
+            <h2>{{ apprenticeship.title }}</h2>
+            <p class="header__description">{{ apprenticeship.description }}</p>
+        </header>
+
+        <article class="article--biography">
+            <p class="paragraph--lead">
+                {{ apprenticeship.story.simplyPut }}
+            </p>
+            {% for story in apprenticeship.story.completeStory %}
+                <p>{{ story }}</p>
+            {% endfor %}
+        </article>
+
+        <section class="section--about">
+            <h3>{{ apprenticeship.openclassrooms.title }}</h3>
+            <div class="section--about__rows">
+            {% for project in apprenticeship.openclassrooms.projects %}
+            <div class="section__row">
+                <p class="section-title">{{ project.chapter }} {% if project.done == true %}
+                    <span class="message--success">(Terminé)</span>
+                {% endif %}</p>
+                <p class="paragraph--lead">{{ project.name }}</p>
+                <p class="paragraph--description">{{ project.description }}</p>
+                {% if project.repository !== null or project.link !== null or project.wireframes !== null %}
+                <div>
+                    {% if project.repository !== null %}
+                        <a href={{ project.repository }} class="link--out">Dépôt Github</a>
+                    {% endif %}
+                    {% if project.wireframes !== null %}
+                        <a href={{ project.wireframes }} class="link--out">Wireframes</a>
+                    {% endif %}
+                {% if project.link !== null %}
+                        <a href={{ project.link }} class="link--out">Projet</a>
+                    {% endif %}
+                </div>
+                {% endif %}
+            </div>
+            {% endfor %}
+            </div>
+        </section>
+    </main>
+{% endblock %}

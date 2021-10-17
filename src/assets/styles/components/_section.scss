@@ -20,6 +20,12 @@
     margin-bottom: $spacing-medium;
   }
 
+  &__row {
+    display: flex;
+    flex-flow: column nowrap;
+    margin-bottom: $spacing-large;
+  }
+
   &--comments {
     @extend .section;
     display: flex;

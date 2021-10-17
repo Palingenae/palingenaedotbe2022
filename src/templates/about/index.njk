@@ -24,9 +24,8 @@ title: "À propos"
             </p>
         </header>
 
-
         <article class="article--biography">
-            <p class="paragraph--lead">{{ about.story.simplyPut}} </p>
+            <p class="paragraph--lead">{{ about.story.simplyPut }} </p>
             {% for story in about.story.completeStory %}
             <p> {{ story }} </p>
             {% endfor %}

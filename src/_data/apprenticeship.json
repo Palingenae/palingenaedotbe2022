@@ -1,0 +1,98 @@
+{
+    "title": "Je suis disponible pour une alternance",
+    "description": "Pour une durée de 10 mois, en régime 1-2 jour par semaine pour les cours en auto-formation et 3-4 jours en entreprise. Je suis intéressée par un CDI ensuite.",
+    "story": {
+        "simplyPut": "En gros, l'auto-formation consistera à continuer mes projets OpenClassrooms pour obtenir le diplôme. Je me sens à l'aise avec Symfony et l'environnement PHP. Je voudrais aussi revoir l'environnement JavaScript.",
+        "completeStory": [
+            "Concrètement, l'alternance (qui n'existe que d'une façon en Belgique) me permettrait d'obtenir cette expérience en entreprise que je recherche, car l'école ne suffit pas et ne donne qu'une face du métier. Il n'y a que comme ça que je peux voir les cas pratiques réels.",
+            "J'ai eu des mentors qui m'ont aidée à m'améliorer et à fournir les outils pour m'aider à mieux appréhender les connaissances sur différents points. J'ai conscience que j'ai beaucoup à apprendre mais ce que j'ai envie à plus long terme, c'est d'être celle qui accompagne les développeur·se·s qui débutent pour les aider à grandir. ",
+            "J'ai déjà eu des expériences en entreprise, certaines plus positives que d'autres. J'ai oublié certains aspects du métier suite à une dépression mais maintenant, ça va mieux, je suis d'attaque."
+        ]
+    },
+    "openclassrooms": {
+        "title": "À propos des projets OpenClassrooms",
+        "projects": [
+            {
+                "chapter": "Projet 1",
+                "done": true,
+                "name": "Définition de la stratégie d'apprentissage",
+                "description": "Présentation de soi et de comment on envisage le suivi de ses formations OpenClassrooms.",
+                "repository": null,
+                "link": null,
+                "wireframes" : null
+            },
+            {
+                "chapter": "Projet 2",
+                "done": true,
+                "name": "Intégrer un thème Wordpress",
+                "description": "Littéralement ce qui est dit, en incluant ses données. Je l'ai mis dans un Docker.",
+                "repository": null,
+                "link": null,
+                "wireframes" : null
+            },
+            {
+                "chapter": "Projet 3",
+                "done": true,
+                "name": "Analyser les besoin d'un client pour un festival de film",
+                "description": "Intégrer en HTML et CSS le prototype d'un site web pour un client. Le cahier des charges, le planning et les wireframes ont été des choses qui faisaient partie des livrables.",
+                "repository": "https://github.com/Palingenae/OC-P3-FilmsPleinAir",
+                "link": null,
+                "wireframes" : "https://www.figma.com/file/3aifMrBgv08Cr81O3gKzZP/Wireframes?node-id=1%3A5701"
+            },
+            {
+                "chapter": "Projet 4",
+                "done": true,
+                "name": "Conception de la solution technique d'une appli de restauration en ligne",
+                "description": "Beaucoup de diagrammes (séquence, cas d'utilisation, classes et entité-relations), et présenter un jeu de données et sortir un dump SQL.",
+                "repository": null,
+                "link": null,
+                "wireframes" : null
+            },
+            {
+                "chapter": "Projet 5",
+                "done": true,
+                "name": "Création d'un blog personnel en PHP",
+                "description": "Pour se vendre, il est important de créer son propre blog pour y publier des articles mais d'autres devaient aussi pouvoir le faire. Les acquis requis étaient ceux des projets 3 et 4 en plus des requis de celui-ci. J'ai imité en partie la structure de Symfony. J'ai utilisé Docker, et d'autres bundles PHP.",
+                "repository": "https://github.com/Palingenae/OC-P5-PersonalBlog",
+                "link": null,
+                "wireframes" : "https://www.figma.com/file/oA8Q44zD7JHxN96jV24pHY/Wireframes?node-id=0%3A1"
+            },
+            {
+                "chapter": "Projet 6",
+                "done": false,
+                "name": "Construire un site communautaire avec Symfony",
+                "description": "L'idée est de prendre en main Symfony. Pour ma part je songe utiliser Docker, Symfony 5.3 et les bundles officiels (contrainte) en plus de PHPStan et PHPCSFixer.",
+                "repository": "https://github.com/Palingenae/OC-P6-SnowTricks",
+                "link": null,
+                "wireframes" : null
+            },
+            {
+                "chapter": "Projet 7",
+                "done": false,
+                "name": "Construire une API avec Symfony",
+                "description": "Perfectionnement avec le framework en créant une API pour faire du headless. J'ai déjà appris à faire ça, mais je voudrais me perfectionner. Peut-être que je vais utiliser Symfony 6. Docker, PHPStan et PHPCSFixer seront aussi de la partie. Je pense utiliser l'architecture hexagonale.",
+                "repository": null,
+                "link": null,
+                "wireframes" : null
+            },
+            {
+                "chapter": "Projet 8",
+                "done": false,
+                "name": "Audit d'une application Symfony et écriture de tests",
+                "description": "Reprendre une application déjà existante, pour la remettre à jour, et créer de nouvelles fonctionnalités.",
+                "repository": null,
+                "link": null,
+                "wireframes" : null
+            },
+            { 
+                "chapter": "Projet 9",
+                "done": false,
+                "name": "Rapport de stage ou veille technologique",
+                "description": "Ce projet consisterait à faire de la veille technologique (mais je le fais déjà).",
+                "repository": null,
+                "link": null,
+                "wireframes" : null
+            }
+        ]
+    }
+}

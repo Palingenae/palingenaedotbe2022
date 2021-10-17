@@ -121,7 +121,6 @@ p {
     size: ms(1);
     variation-settings: 'wght' 350;
   }
-  @apply text-grey-900;
   margin-bottom: $spacing-small;
 }
 
@@ -132,6 +131,11 @@ p {
     font-size: ms(1);
     font-variation-settings: 'wght' 600;
     font-style: italic;
+  }
+
+  &--description {
+    color: $grey-700;
+    max-width: 70ch;
   }
 
   &--jumbo {
@@ -152,6 +156,14 @@ p {
   @extend p;
   font-size: ms(2);
   font-variation-settings: 'wght' 500;
+}
+
+.message {
+  &--success {
+    font-variation-settings: 'wgth' 400;
+    font-size: ms(1);
+    color: $colour-coldOne-300;
+  }
 }
 
 /* ----- Giving all labor elements the same line-height and letter spacing nomatter the context ----- */
