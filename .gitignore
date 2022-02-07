@@ -7,3 +7,5 @@ dist
 .env
 .env.*
 src/templates/it-is-pages-for-11ty.txt
+
+public/
