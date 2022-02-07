@@ -1,4 +1,5 @@
-const pluginSass = require("eleventy-plugin-sass");
+const path = require("path");
+const pluginSass = require("eleventy-plugin-dart-sass");
 const pluginPurgeCss = require("eleventy-plugin-purgecss");
 const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
@@ -6,8 +7,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPlugin(UpgradeHelper);
 
   eleventyConfig.addPlugin(pluginSass, {
-    watch: "src/assets/styles/**/*.scss",
-    outputDir: "public/assets/styles"
+    sassLocation: path.resolve("./src/assets/styles/"),
+    sassIndexFile: "/styles.scss",
+    watchSass: true,
+
+    outDir: path.resolve("./public/"),
+    outPath: "/assets",
+    outFileName: "styles"
   });
 
   eleventyConfig.addPlugin(pluginPurgeCss, {
