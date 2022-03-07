@@ -6,8 +6,14 @@
 }
 
 ::selection {
-  background-color: $colour-main-700;
-  color: $grey-100;
+  @include light-theme {
+    background-color: $colour-main-700;
+    color: $grey-100;
+  }
+  @include dark-theme {
+    background-color: $colour-main-200;
+    color: $grey-1000;
+  }
 }
 
 body {
@@ -18,6 +24,12 @@ body {
   font-family: $font-sans;
   font-size: 1em;
   font-kerning: normal;
-  color: $grey-900;
-  background-color: $colour-warmOne-100;
+  @include light-theme {
+    color: $grey-900;
+    background-color: $colour-warmOne-100;
+  }
+  @include dark-theme {
+    color: $grey-200;
+    background-color: $colour-coldTwo-1000;
+  }
 }

@@ -1,35 +1,35 @@
 /* ----- Colours ----- */
-$colour-main-900: #3E1E1A;
-$colour-main-700: #6D222E;
-$colour-main: #902C3D;
-$colour-main-300: #C54459;
-$colour-main-200: #D47383;
+$colour-main-1000: #250911;
+$colour-main-900: #491221;
+$colour-main-700: #6E1C32;
+$colour-main: #942543;
+$colour-main-300: #CE3B62;
+$colour-main-200: #DE7C97;
+$colour-main-100: #EFBECB;
 
-$colour-warmOne-900: #907127;
-$colour-warmOne-700: #C09635;
+$colour-warmOne-1000: #3B2E10;
+$colour-warmOne-900: #765C20;
+$colour-warmOne-700: #B18B31;
 $colour-warmOne: #D2AE5B;
-$colour-warmOne-300: #E0C88F;
-$colour-warmOne-200: #EDE0BF;
-$colour-warmOne-100: #FBF7EF;
+$colour-warmOne-300: #DDC284;
+$colour-warmOne-200: #E9D7AD;
+$colour-warmOne-100: #F4EBD6;
 
-$colour-warmTwo-900 : #5E1E1C;
-$colour-warmTwo-700 : #8D5D2A;
-$colour-warmTwo : #B97A37;
-$colour-warmTwo-300 : #D09B62;
-$colour-warmTwo-200 : #DEB991;
-
-$colour-coldOne-900: #0C0E07;
-$colour-coldOne-700: #2E361B;
+$colour-coldOne-1000: #13170C;
+$colour-coldOne-900: #272E17;
+$colour-coldOne-700: #3A4523;
 $colour-coldOne: #4F5D2F;
-$colour-coldOne-300: #738844;
-$colour-coldOne-200: #95AD5C;
-$colour-coldOne-100: #AFC185;
+$colour-coldOne-300: #83994D;
+$colour-coldOne-200: #AEC183;
+$colour-coldOne-100: #D7E0C1;
 
-$colour-coldTwo-900: #120C2E;
-$colour-coldTwo-700: #261961;
-$colour-coldTwo: #392692;
-$colour-coldTwo-300: #735DD5;
-$colour-coldTwo-200: #9D8DE2;
+$colour-coldTwo-1000: #040718;
+$colour-coldTwo-900: #080E30;
+$colour-coldTwo-700: #0C1548;
+$colour-coldTwo: #101C5E;
+$colour-coldTwo-300: #1F35B5;
+$colour-coldTwo-200: #556AE2;
+$colour-coldTwo-100: #AAB5F1;
 
 $grey-100: #F4F4F4;
 $grey-200: #DFDFDF;
@@ -45,23 +45,29 @@ $grey-1000: #0D0D0D;
 /* ----- Typography ----- */
 
 $font-serif: "Fraunces", serif;
-$font-sans: "Work Sans", sans-serif;
+$font-sans: "Space Grotesk", sans-serif;
 // $font-mono : "Recursive", monospace;
 $modularscale: (
   base: 16px,
-  ratio: 1.33
+  ratio: 1.25
 );
 
-$text-width: 60rem !default;
+$font-serif-sharp: 'SOFT' 0;
+$font-serif-soft: 'SOFT' 50;
+$font-serif-superSoft: 'SOFT' 100;
+
+$font-sans-alternates: 'ss02', 'ss03', 'ss04';
+
+$text-width: 72ch;
 $block-width: 90rem !default;
 
 /* ----- Spacing ----- */
 $spacing-kerning: normal;
-$spacing-letter-spacing-display: 0.2rem;
+$spacing-letter-spacing-display: -0.15rem;
 $spacing-letter-spacing-title: 0.1rem;
 $spacing-letter-spacing-text: 0.05rem;
-$spacing-display-line-height: 1.33;
-$spacing-text-line-height: 1.4;
+$spacing-display-line-height: 1.16;
+$spacing-text-line-height: 1.5;
 $spacing-padding: 2rem;
 $spacing-margin: 2rem;
 

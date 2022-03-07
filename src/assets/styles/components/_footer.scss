@@ -2,7 +2,7 @@
   display: flex;
   flex-flow: column;
 
-  &__top {
+  &Top {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -20,16 +20,15 @@
     }
   }
 
-  &__contact {
+  &Contact {
     font-size: ms(2);
-    font-variation-settings: 'wght' 600;
     margin-bottom: 0;
     @include medium-display {
       margin-bottom: $spacing-medium;
     }
   }
 
-  &__bottom {
+  &Bottom {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -48,13 +47,13 @@
     }
   }
 
-  &__navigation__menu {
+  &NavigationMenu {
     display: flex;
     width: 40%;
     justify-content: space-between;
 
-    .footer__navigation__link {
-      @extend .navigation__link;
+    .footerNavigationLink {
+      @extend .navigationLink;
       margin-left: $spacing-large;
       @include medium-display {
         margin: 0 $spacing-small;
@@ -68,20 +67,10 @@
       text-align: center;
       margin-bottom: $spacing-medium;
 
-      .footer__navigation__link {
+      .footerNavigationLink {
         display: flex;
         margin: $spacing-medium $spacing-small;
       }
-    }
-  }
-
-  &__copyright {
-    @extend .paragraph--lead;
-    @include medium-display {
-      margin-top: $spacing-medium;
-    }
-    @include small-display {
-      text-align: center;
     }
   }
 }

@@ -1,11 +1,6 @@
 .header {
   margin-bottom: $spacing-xlarge;
 
-  &__context {
-    font-variation-settings: 'wght' 700;
-    margin-bottom: $spacing-medium;
-  }
-
   &__subcontext {
     @extend h2;
   }
@@ -42,12 +37,14 @@
   }
 
   &__description {
+    font-variation-settings: 'wght' 300;
+    max-width: 36ch;
     margin-bottom: $spacing-large;
     @include very-very-large-display {
-      font-size: ms(3);
+      font-size: ms(5);
     }
     @include very-large-display {
-      font-size: ms(3);
+      font-size: ms(4);
     }
     @include large-display {
       font-size: ms(3);

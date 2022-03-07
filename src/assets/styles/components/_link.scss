@@ -2,7 +2,13 @@
   font-size: ms(1);
   display: inline-flex;
   text-decoration: none;
+  font-feature-settings: $font-sans-alternates;
   margin-bottom: $spacing-small;
+
+  &Social {
+    @extend .link;
+    font-size: ms(1);
+  }
 }
 //   &--in {
 //     @extend .link;

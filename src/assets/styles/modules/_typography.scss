@@ -15,17 +15,10 @@
 }
 
 @font-face {
-  font-family: "Work Sans";
+  font-family: "Space Grotesk";
   font-style: normal;
-  src: url('./fonts/work-sans/WorkSans[wght].ttf');
+  src: url('./fonts/space-grotesk/SpaceGrotesk[wght].ttf');
 }
-
-@font-face {
-  font-family: "Work Sans";
-  font-style: italic;
-  src: url('./fonts/work-sans/WorkSans-Italic[wght].ttf');
-}
-
 
 /*
 ** Defining typographic variables
@@ -40,17 +33,17 @@ h2 {
 h1 {
   font-family: $font-serif;
   font-variation-settings:
-    'wght' 800,
-    'SOFT' 20,
+    'wght' 700,
+    'SOFT' 10,
     'WONK' 1,
     'opsz' 80;
   margin-bottom: $spacing-medium;
   @include very-very-large-display {
-    font-size: ms(7);
+    font-size: ms(8);
   }
 
   @include very-large-display {
-    font-size: ms(6);
+    font-size: ms(7);
   }
 
   @include large-display {
@@ -58,7 +51,7 @@ h1 {
   }
 
   @include medium-display {
-    font-size: ms(6);
+    font-size: ms(5);
   }
 
   @include small-display {
@@ -69,17 +62,17 @@ h1 {
 h2 {
   font-family: $font-serif;
   font-variation-settings:
+    $font-serif-sharp,
     'wght' 600,
-    'SOFT' 25,
     'WONK' 1,
     'opsz' 80;
   margin-bottom: $spacing-medium;
   @include very-very-large-display {
-    font-size: ms(6);
+    font-size: ms(7);
   }
 
   @include very-large-display {
-    font-size: ms(5);
+    font-size: ms(6);
   }
 
   @include large-display {
@@ -96,12 +89,23 @@ h2 {
 }
 
 h3 {
-  font-family: $font-sans;
-  font-size: ms(3);
-  font-variation-settings: 'wght' 600;
+  font-family: $font-serif;
+  font-variation-settings:
+    $font-serif-soft,
+    'wght' 400,
+    'opsz' 80;
   margin-bottom: $spacing-large;
+  @include very-large-display {
+    font-size: ms(6);
+  }
+  @include large-display {
+    font-size: ms(5);
+  }
+  @include medium-display {
+    font-size: ms(4);
+  }
   @include small-display {
-    font-size: ms(2);
+    font-size: ms(3);
   }
 }
 
@@ -109,17 +113,56 @@ h4 {
   font-family: $font-sans;
   font-size: ms(2);
   margin-bottom: $spacing-medium;
+  @include very-large-display {
+    font-size: ms(5);
+  }
+  @include large-display {
+    font-size: ms(4);
+  }
+  @include medium-display {
+    font-size: ms(3);
+  }
   @include small-display {
-    font-size: ms(1);
+    font-size: ms(2);
+  }
+}
+
+.a-display {
+
+  &.-fat {
+    font-family: $font-serif;
+    font-variation-settings:
+      $font-serif-sharp,
+      'opsz' 144,
+      'WONK' 1,
+      'wght' 900;
+    letter-spacing: $spacing-letter-spacing-display;
+    line-height: $spacing-display-line-height;
+    margin-bottom: $spacing-large;
+    @include very-very-large-display {
+      font-size: ms(10);
+    }
+    @include very-large-display {
+      font-size: ms(9);
+    }
+    @include large-display {
+      font-size: ms(8);
+    }
+    @include medium-display {
+      font-size: ms(7);
+    }
+    @include small-display {
+      font-size: ms(6);
+    }
   }
 }
 
 p {
   font: {
     family: $font-sans;
-    weight: 400;
     size: ms(1);
     variation-settings: 'wght' 350;
+    feature-settings: $font-sans-alternates;
   }
   margin-bottom: $spacing-small;
 }
@@ -127,42 +170,11 @@ p {
 .paragraph {
   @extend p;
 
-  &--lead {
-    font-size: ms(1);
-    font-variation-settings: 'wght' 600;
-    font-style: italic;
-  }
-
-  &--description {
-    color: $grey-700;
-    max-width: 70ch;
-  }
-
-  &--jumbo {
-    color: $grey-800;
-    font-size: ms(2);
-    font-weight: 300;
-    max-width: $text-width;
+  &Jumbo {
+    font-size: ms(3);
+    font-variation-settings: 'wght' 300;
+    max-width: 42ch;
     margin-bottom: $spacing-medium;
-  }
-}
-
-.user-interactions {
-  @extend p;
-  font-size: ms(1);
-}
-
-.section-title {
-  @extend p;
-  font-size: ms(2);
-  font-variation-settings: 'wght' 500;
-}
-
-.message {
-  &--success {
-    font-variation-settings: 'wgth' 400;
-    font-size: ms(1);
-    color: $colour-coldOne-300;
   }
 }
 
@@ -176,14 +188,34 @@ strong,
 span,
 ul,
 li {
-  color: $grey-900;
   font-family: $font-sans;
   line-height: $spacing-text-line-height;
   letter-spacing: $spacing-letter-spacing-text;
+  @include light-theme {
+    color: $grey-900;
+    font-variation-settings: 'wght' 400;
+
+  }
+  @include dark-theme {
+    color: $grey-300;
+    font-variation-settings: 'wght' 410;
+
+  }
 }
 
 .italic,
 i,
 em {
+  color: inherit;
+  font-family: inherit;
   font-style: italic;
+}
+
+.bold,
+b,
+strong
+{
+  color: inherit;
+  font-family: inherit;
+  font-variation-settings: 'wght' 600;
 }

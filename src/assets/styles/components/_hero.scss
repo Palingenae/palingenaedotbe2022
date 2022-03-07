@@ -1,11 +1,12 @@
 .hero {
+  height: calc(100vh - $spacing-large - 28px);
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
   align-content: flex-start;
   align-items: flex-start;
-  // height: 100vh;
   padding: 0 $spacing-xlarge;
+  margin-top: calc($spacing-large + 28px);
   @include medium-display {
     padding: 0 $spacing-large;
   }
@@ -14,62 +15,15 @@
   }
 
   &__greeting {
-    font-weight: 700;
-    margin-bottom: $spacing-medium;
-    @include very-very-large-display {
-      font-size: ms(7);
-    }
-    @include very-large-display {
-      font-size: ms(6);
-    }
-    @include large-display {
-      font-size: ms(5);
-    }
-    @include medium-display {
-      font-size: ms(4);
-    }
+    @extend h3;
   }
 
   &__introduction {
-    color: $colour-coldOne;
-    font-variation-settings: 'wght' 300, 'SOFT' 40;
-    letter-spacing: -0.1rem;
-    line-height: $spacing-display-line-height;
-    // color: $cold-alternate-1;
-    margin-bottom: $spacing-medium;
-    @include very-very-large-display {
-      font-size: ms(6);
-    }
-    @include very-large-display {
-      font-size: ms(5);
-    }
-    @include large-display {
-      font-size: ms(4);
-    }
-    @include medium-display {
-      font-size: ms(3);
-    }
+    @extend .a-display;
+    @extend .-fat;
   }
 
   &__description {
-    font-variation-settings: 'wght' 250;
-    line-height: $spacing-display-line-height;
-    max-width: $block-width;
-    margin-bottom: $spacing-large;
-    @include very-very-large-display {
-      font-size: ms(5);
-    }
-    @include very-large-display {
-      font-size: ms(4);
-    }
-    @include large-display {
-      font-size: ms(3);
-    }
-    @include medium-display {
-      font-size: ms(3);
-    }
-    @include small-display {
-      font-size: ms(2);
-    }
+    @extend h3;
   }
 }

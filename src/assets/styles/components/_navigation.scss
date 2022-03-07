@@ -1,28 +1,48 @@
 .navigation {
+  position: fixed;
   display: flex;
   width: 100%;
   justify-content: space-between;
   padding: $spacing-medium $spacing-xlarge;
 
-  &__link {
+  &Link {
     font-size: ms(1);
     text-decoration: none;
-  }
-
-  &--site {
-    @extend .navigation;
-    background-color: $colour-warmOne-100;
-  }
-
-  &__logo {
-
-    &__link {
-      @extend .navigation__link;
-      font-variation-settings: 'wght' 700;
+    font-feature-settings: $font-sans-alternates;
+    @include light-theme {
+      color: $grey-1000;
+    }
+    @include dark-theme {
+      color: $grey-100;
     }
   }
 
-  &__menu {
+  &.-site {
+    @extend .navigation;
+    @include light-theme {
+      background-color: $colour-warmOne-100;
+      border-bottom: solid 1px $grey-1000;
+    }
+    @include dark-theme {
+      background-color: $colour-coldTwo-1000;
+      border-bottom: solid 1px $grey-100;
+    }
+  }
+
+  &Logo {
+
+    &Link {
+      @extend .navigationLink;
+      font-family: $font-serif;
+      font-style: italic;
+      font-size: ms(2);
+      font-variation-settings:
+        $font-serif-soft,
+        'wght' 450;
+    }
+  }
+
+  &Menu {
     display: flex;
     flex-grow: 1;
     justify-content: flex-end;
@@ -30,9 +50,8 @@
       display: none;
     }
 
-    &__link {
-      @extend .navigation__link;
-      font-variation-settings: 'wght' 350;
+    &Link {
+      @extend .navigationLink;
 
       &:not(:first-of-type) {
         margin-left: $spacing-large;
@@ -43,7 +62,6 @@
     padding: $spacing-medium $spacing-large;
   }
   @include medium-display {
-    // position: fixed;
     padding: $spacing-medium $spacing-large;
   }
   @include small-display {

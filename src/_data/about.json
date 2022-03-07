@@ -1,29 +1,22 @@
 {
     "hero": {
-        "greetings": "Bonjour !",
-        "introduction": "Je m'appelle Olivia",
-        "description": "Je suis une développeuse Web et Photographe actuellement à Nantes."
+        "greetings": "Oui, salut ! Ici tu trouveras...",
+        "whatDo": "Développement Web, Photographie & Design",
+        "description": "... et parfois tout ça en même temps !"
     },
     "me": {
         "name": {
             "firstname": "Olivia",
-            "lastname": {
-                "prefix": "De",
-                "suffix": "Scheerder"
-            }
+            "introduction" : "Simplement, "
         },
-        "position": "Développeuse Web PHP / Symfony (en alternance).",
+        "position": "Développeuse Web (en alternance).",
         "company": "En recherche d'une entreprise.",
         "school": "OpenClassrooms"
     },
     "story": {
-        "simplyPut": "Si on pouvait me résumer en une phrase : je suis curieuse, introvertie et je suis une touche-à-tout.",
-        "completeStory": [
-            "D’origine belge, je n’ai pas peur de parcourir des kilomètres pour obtenir ce que je souhaite, et une fois que je parviens à m’approprier mon environnement, je fais les choses comme elles me plaisent.",
-            "En fait, j’aime énormément de choses et j’ai parfois l’impression de ne pas avoir assez avec ma vie pour tout faire ! J’ai toujours été intéressée par l’informatique, mais je suis aussi intéressée par les domaines artistiques, comme la photographie ! J’adore les jolies choses et la programmation, alors j’ai voulu être une développeuse Front-End qui a aussi une touche pour l’UX. J’avais commencé des études en Arts Graphiques avant ma licence réussie à Charleroi, en Belgique.",
-            "Mais, comme la plupart, j’ai eu une phase à vide qui a duré 4 ans. Après une mauvaise expérience, j’ai décidé que j’allais prendre soin de moi pour mieux me remettre sur pied pour la suite. Je suis maintenant en alternance pour ré-apprendre le développement web et comme je suis une développeuse curieuse, je m’intéresse au Back-End des applications PHP et à Docker.",
-            "J’adore aussi énormément cuisiner, car ma mère et mon parrain ont travaillé dans la restauration, alors, sur mon temps libre, je passe du temps dans ma cuisine à conconcter des plats pour moi, mais aussi pour les gens que j’aime. C’est aussi avec des métaphores de cuisine que je vulgarise mon métier. Elles captent toujours l’attention.",
-            "Et actuellement, je réapprends le métier qui m’a longtemps inspirée, le tout, entourée de profils seniors, qui me redonnent une nouvelle perspective sur mes exigences, et m’aident à me concentrer sur ce qui compte vraiment."
+        "shortStory" : [
+            "Je suis une développeuse web créative. J'aime beaucoup le design, la photographie et très particulièrement la typographie. Oui, une véritable curieuse et touche-à-tout.",
+            "Vous me trouverez le plus fréquemment sur internet avec le pseudo Palingenae."
         ],
         "skillsetLearning": "À la fois tout au long de mes études qu’en auto-didacte, j’ai pris le temps d’apprendre ces technologies. L’idée est tout de même de gagner sur ces compétences techniques en elles-mêmes pour gagner en maîtrise dans le temps et ne pas systémement m’étaler sur chaque nouvelle technologie qui sort."
     },

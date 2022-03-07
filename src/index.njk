@@ -6,16 +6,31 @@ permalink: "/"
 
 {% block body %}
     <section class="hero">
-      <h1 class="hero__greeting">
+      <p class="hero__greeting">
         {{ about.hero.greetings }}
-      </h1>
+      </p>
 
-      <h2 class="hero__introduction">
-        {{ about.hero.introduction }}
-      </h2>
+      <p class="hero__introduction">
+        {{ about.hero.whatDo }}
+      </p>
 
       <p class="hero__description">
         {{ about.hero.description }}
       </p>
+    </section>
+    <section class="sectionColumns">
+        <div class="header__name">
+        <p class="sectionContext">{{ site.contexts.about }}</p>
+            <h1>
+                {{ about.me.name.introduction }}
+                <em>{{ about.me.name.firstname }}</em>.
+            </h1>
+            {% for story in about.story.shortStory %}
+                <p class="paragraphJumbo">
+                  {{ story }}
+                </p>
+            {% endfor %}
+        </div>
+        {% include "./_includes/_partials/social-links.njk" %}
     </section>
 {% endblock %}
