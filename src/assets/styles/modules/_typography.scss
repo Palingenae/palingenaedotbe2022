@@ -128,15 +128,8 @@ h4 {
 }
 
 .a-display {
-
-  &.-fat {
-    font-family: $font-serif;
-    font-variation-settings:
-      $font-serif-sharp,
-      'opsz' 144,
-      'WONK' 1,
-      'wght' 900;
-    letter-spacing: $spacing-letter-spacing-display;
+  font-family: $font-serif;
+  letter-spacing: $spacing-letter-spacing-display;
     line-height: $spacing-display-line-height;
     margin-bottom: $spacing-large;
     @include very-very-large-display {
@@ -154,25 +147,41 @@ h4 {
     @include small-display {
       font-size: ms(6);
     }
+
+  &.-fat {
+    font-variation-settings:
+      $font-serif-sharp,
+      'opsz' 144,
+      'WONK' 1,
+      'wght' 900;
+    
   }
 }
 
-p {
+p,
+.paragraph {
   font: {
     family: $font-sans;
     size: ms(1);
-    variation-settings: 'wght' 350;
     feature-settings: $font-sans-alternates;
   }
+  letter-spacing: $spacing-letter-spacing-text;
   margin-bottom: $spacing-small;
-}
+  @include light-theme {
+    color: $grey-900;
+    font-variation-settings: 'wght' 400;
+  }
 
-.paragraph {
-  @extend p;
+  @include dark-theme {
+    color: $grey-300;
+    font-variation-settings: 'wght' 410;
+  }
 
-  &Jumbo {
+  &.-jumbo {
     font-size: ms(3);
     font-variation-settings: 'wght' 300;
+    // letter-spacing: $spacing-letter-spacing-title;
+    line-height: $spacing-text-line-height;
     max-width: 42ch;
     margin-bottom: $spacing-medium;
   }
@@ -180,40 +189,26 @@ p {
 
 /* ----- Giving all labor elements the same line-height and letter spacing nomatter the context ----- */
 
-a,
 b,
+i,
 p,
 em,
-strong,
-span,
-ul,
-li {
-  font-family: $font-sans;
-  line-height: $spacing-text-line-height;
-  letter-spacing: $spacing-letter-spacing-text;
-  @include light-theme {
-    color: $grey-900;
-    font-variation-settings: 'wght' 400;
-
-  }
-  @include dark-theme {
-    color: $grey-300;
-    font-variation-settings: 'wght' 410;
-
-  }
+span {
+  font-family: inherit;
+  line-height: inherit;
 }
 
-.italic,
 i,
-em {
+em,
+.italic {
   color: inherit;
   font-family: inherit;
   font-style: italic;
 }
 
-.bold,
 b,
-strong
+strong,
+.bold
 {
   color: inherit;
   font-family: inherit;

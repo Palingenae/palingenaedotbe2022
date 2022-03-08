@@ -1,42 +1,33 @@
 .section {
   padding: $spacing-xlarge;
 
-  &Columns {
+  &.-columns {
     @extend .section;
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: flex-end;
     @include medium-display {
       flex-flow: column;
     }
+
+    &__column {
+      margin-bottom: $spacing-medium;
+    }
   }
 
-  &Context {
+  &.-rows {
+    &__row {
+      display: flex;
+      flex-flow: column nowrap;
+      margin-bottom: $spacing-large;
+    }
+  }
+
+  /* That's Typography only */
+  &__context {
     font-size: ms(2);
     font-variation-settings: 'wght' 700;
     margin-bottom: $spacing-medium;
-  }
-
-  &--about {
-    @extend .section;
-    flex-flow: column nowrap;
-  }
-
-  &__column {
-    margin-bottom: $spacing-medium;
-  }
-
-  &__row {
-    display: flex;
-    flex-flow: column nowrap;
-    margin-bottom: $spacing-large;
-  }
-
-  &--comments {
-    @extend .section;
-    display: flex;
-    flex-direction: column;
-    margin-bottom: $spacing-large;
   }
 }

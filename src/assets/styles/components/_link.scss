@@ -1,13 +1,18 @@
+a,
 .link {
-  font-size: ms(1);
   display: inline-flex;
+  font-size: inherit;
   text-decoration: none;
   font-feature-settings: $font-sans-alternates;
-  margin-bottom: $spacing-small;
+  color: inherit;
+  letter-spacing: inherit;
 
-  &Social {
+  &.-social {
     @extend .link;
     font-size: ms(1);
+    &:not(:last-of-type) {
+      margin-bottom: $spacing-medium;
+    }
   }
 }
 //   &--in {

@@ -5,28 +5,28 @@ permalink: "/"
 {% extends "./_includes/_layouts/base.njk" %}
 
 {% block body %}
-    <section class="hero">
-      <p class="hero__greeting">
+    <section class="o-hero">
+      <p class="o-hero__greeting">
         {{ about.hero.greetings }}
       </p>
 
-      <p class="hero__introduction">
+      <p class="o-hero__introduction">
         {{ about.hero.whatDo }}
       </p>
 
-      <p class="hero__description">
+      <p class="o-hero__description">
         {{ about.hero.description }}
       </p>
     </section>
-    <section class="sectionColumns">
+    <section class="section -columns">
         <div class="header__name">
-        <p class="sectionContext">{{ site.contexts.about }}</p>
+            <p class="section__context">{{ site.contexts.about }}</p>
             <h1>
                 {{ about.me.name.introduction }}
                 <em>{{ about.me.name.firstname }}</em>.
             </h1>
             {% for story in about.story.shortStory %}
-                <p class="paragraphJumbo">
+                <p class="paragraph -jumbo">
                   {{ story }}
                 </p>
             {% endfor %}
