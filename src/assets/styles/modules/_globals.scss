@@ -7,12 +7,12 @@
 
 ::selection {
   @include light-theme {
-    background-color: $colour-main-700;
-    color: $grey-100;
+    background-color: $colour-main-900;
+    color: $colour-main-100;
   }
   @include dark-theme {
-    background-color: $colour-main-200;
-    color: $grey-1000;
+    background-color: $colour-main-100;
+    color: $colour-main-900;
   }
 }
 
@@ -30,6 +30,6 @@ body {
   }
   @include dark-theme {
     color: $grey-200;
-    background-color: $colour-coldTwo-1000;
+    background-color: $colour-coldOne-1000;
   }
 }

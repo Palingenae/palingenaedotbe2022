@@ -45,7 +45,7 @@ $grey-1000: #0D0D0D;
 /* ----- Typography ----- */
 
 $font-serif: "Fraunces", serif;
-$font-sans: "Space Grotesk", sans-serif;
+$font-sans: "Epilogue", sans-serif;
 // $font-mono : "Recursive", monospace;
 $modularscale: (
   base: 16px,
@@ -59,15 +59,16 @@ $font-serif-superSoft: 'SOFT' 100;
 $font-sans-alternates: 'ss02', 'ss03', 'ss04';
 
 $text-width: 72ch;
-$block-width: 90rem !default;
+$block-width: 96rem !default;
 
 /* ----- Spacing ----- */
 $spacing-kerning: normal;
 $spacing-letter-spacing-display: -0.15rem;
-$spacing-letter-spacing-title: 0.1rem;
+$spacing-letter-spacing-title: 0.15rem;
 $spacing-letter-spacing-text: 0.05rem;
 $spacing-display-line-height: 1.16;
-$spacing-text-line-height: 1.5;
+$spacing-largeText-line-height: 1.5;
+$spacing-body-line-height: 1.8;
 $spacing-padding: 2rem;
 $spacing-margin: 2rem;
 

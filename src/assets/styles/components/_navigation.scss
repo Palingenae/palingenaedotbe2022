@@ -5,7 +5,7 @@
   justify-content: space-between;
   padding: $spacing-medium $spacing-xlarge;
 
-  &Link {
+  &__link {
     font-size: ms(1);
     text-decoration: none;
     font-feature-settings: $font-sans-alternates;
@@ -24,15 +24,15 @@
       border-bottom: solid 1px $grey-1000;
     }
     @include dark-theme {
-      background-color: $colour-coldTwo-1000;
+      background-color: $colour-coldOne-1000;
       border-bottom: solid 1px $grey-100;
     }
   }
 
-  &Logo {
+  &__logo {
 
-    &Link {
-      @extend .navigationLink;
+    &__link {
+      @extend .navigation__link;
       font-family: $font-serif;
       font-style: italic;
       font-size: ms(2);
@@ -42,16 +42,17 @@
     }
   }
 
-  &Menu {
+  &__menu {
     display: flex;
     flex-grow: 1;
     justify-content: flex-end;
+    align-items: center;
     @include small-display {
       display: none;
     }
 
-    &Link {
-      @extend .navigationLink;
+    &__link {
+      @extend .navigation__link;
 
       &:not(:first-of-type) {
         margin-left: $spacing-large;

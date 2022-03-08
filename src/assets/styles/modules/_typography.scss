@@ -20,6 +20,18 @@
   src: url('./fonts/space-grotesk/SpaceGrotesk[wght].ttf');
 }
 
+@font-face {
+  font-family: "Epilogue";
+  font-style: normal;
+  src: url('./fonts/epilogue/Epilogue[wght].woff2');
+}
+@font-face {
+  font-family: "Epilogue";
+  font-style: italic;
+  src: url('./fonts/epilogue/Epilogue-Italic[wght].woff2');
+}
+
+
 /*
 ** Defining typographic variables
 */
@@ -54,9 +66,9 @@ h1 {
     font-size: ms(5);
   }
 
-  @include small-display {
-    font-size: ms(4);
-  }
+  // @include small-display {
+  //   font-size: ms(4);
+  // }
 }
 
 h2 {
@@ -82,29 +94,27 @@ h2 {
   @include medium-display {
     font-size: ms(4);
   }
-
-  @include small-display {
-    font-size: ms(3);
-  }
 }
 
 h3 {
   font-family: $font-serif;
   font-variation-settings:
     $font-serif-soft,
-    'wght' 400,
-    'opsz' 80;
-  margin-bottom: $spacing-large;
-  @include very-large-display {
+    'wght' 350,
+    'opsz' 80,
+    'WONK' 0;
+  font-style: italic;
+  margin-bottom: $spacing-medium;
+  @include very-very-large-display {
     font-size: ms(6);
   }
-  @include large-display {
+  @include very-large-display {
     font-size: ms(5);
   }
-  @include medium-display {
+  @include large-display {
     font-size: ms(4);
   }
-  @include small-display {
+  @include medium-display {
     font-size: ms(3);
   }
 }
@@ -113,6 +123,9 @@ h4 {
   font-family: $font-sans;
   font-size: ms(2);
   margin-bottom: $spacing-medium;
+  @include very-very-large-display {
+    font-size: ms(6);
+  }
   @include very-large-display {
     font-size: ms(5);
   }
@@ -166,24 +179,43 @@ p,
     feature-settings: $font-sans-alternates;
   }
   letter-spacing: $spacing-letter-spacing-text;
-  margin-bottom: $spacing-small;
+  line-height: $spacing-body-line-height;
+  margin-bottom: $spacing-medium;
+  & + h2,
+  & + h3 {
+    margin-top: $spacing-large;
+  }
   @include light-theme {
     color: $grey-900;
     font-variation-settings: 'wght' 400;
   }
 
   @include dark-theme {
-    color: $grey-300;
+    color: $grey-200;
     font-variation-settings: 'wght' 410;
+  }
+  @include small-display {
+    font-size: ms(0);
   }
 
   &.-jumbo {
-    font-size: ms(3);
     font-variation-settings: 'wght' 300;
-    // letter-spacing: $spacing-letter-spacing-title;
-    line-height: $spacing-text-line-height;
-    max-width: 42ch;
+    line-height: $spacing-largeText-line-height;
+    max-width: 48ch;
     margin-bottom: $spacing-medium;
+    @include very-very-large-display {
+      font-size: ms(3);
+    }
+    @include very-large-display {
+      font-size: ms(3);
+    }
+    
+    @include large-display {
+      font-size: ms(2);
+    }
+    @include small-display {
+      font-size: ms(1);
+    }
   }
 }
 

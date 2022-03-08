@@ -18,19 +18,21 @@ permalink: "/"
         {{ about.hero.description }}
       </p>
     </section>
-    <section class="section -columns">
-        <div class="header__name">
-            <p class="section__context">{{ site.contexts.about }}</p>
-            <h1>
-                {{ about.me.name.introduction }}
-                <em>{{ about.me.name.firstname }}</em>.
-            </h1>
-            {% for story in about.story.shortStory %}
-                <p class="paragraph -jumbo">
-                  {{ story }}
-                </p>
-            {% endfor %}
-        </div>
-        {% include "./_includes/_partials/social-links.njk" %}
-    </section>
+    <main class="main">
+      <section class="section -columns">
+          <div class="header__name">
+              <p class="section__context">{{ site.contexts.about }}</p>
+              <h1>
+                  {{ about.me.name.introduction }}
+                  <em>{{ about.me.name.firstname }}</em>.
+              </h1>
+              {% for story in about.story.shortStory %}
+                  <p class="paragraph -jumbo">
+                    {{ story }}
+                  </p>
+              {% endfor %}
+          </div>
+          {% include "./_includes/_partials/social-links.njk" %}
+      </section>
+    </main>
 {% endblock %}

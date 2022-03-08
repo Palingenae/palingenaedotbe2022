@@ -21,9 +21,11 @@
   &__introduction {
     @extend .a-display;
     @extend .-fat;
+    max-width: 20ch;
   }
 
   &__description {
     @extend h3;
+    margin-top: 0;
   }
 }

@@ -1,59 +1,27 @@
 .footer {
   display: flex;
-  flex-flow: column;
-
-  &Top {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    padding: $spacing-small $spacing-xlarge;
-    @include medium-display {
-      flex-flow: column-reverse nowrap;
-      align-items: center;
-      justify-content: center;
-      justify-items: center;
-      padding: $spacing-small $spacing-large;
-    }
-    @include small-display {
-      flex-direction: column-reverse;
-      padding: $spacing-small $spacing-medium;
-    }
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  padding: $spacing-small $spacing-xlarge;
+  @include medium-display {
+    flex-flow: column-reverse nowrap;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+    padding: $spacing-small $spacing-large;
+  }
+  @include small-display {
+    flex-direction: column-reverse;
+    padding: $spacing-small $spacing-medium;
   }
 
-  &Contact {
-    font-size: ms(2);
-    margin-bottom: 0;
-    @include medium-display {
-      margin-bottom: $spacing-medium;
-    }
-  }
-
-  &Bottom {
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    padding: $spacing-small $spacing-xlarge;
-
-    @include medium-display {
-      flex-flow: column-reverse nowrap;
-      align-items: center;
-      justify-content: center;
-      justify-items: center;
-      padding: $spacing-small $spacing-large;
-    }
-    @include small-display {
-      flex-direction: column-reverse;
-      padding: $spacing-small $spacing-medium;
-    }
-  }
-
-  &NavigationMenu {
+  &__navigation__menu {
     display: flex;
     width: 40%;
     justify-content: space-between;
 
-    .footerNavigationLink {
-      @extend .navigationLink;
+    .footer__navigation__link {
+      @extend .navigation__link;
       margin-left: $spacing-large;
       @include medium-display {
         margin: 0 $spacing-small;
@@ -67,7 +35,7 @@
       text-align: center;
       margin-bottom: $spacing-medium;
 
-      .footerNavigationLink {
+      .footer__navigation__link {
         display: flex;
         margin: $spacing-medium $spacing-small;
       }
