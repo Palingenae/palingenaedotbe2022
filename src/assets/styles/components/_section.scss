@@ -16,6 +16,7 @@
   }
 
   &.-rows {
+
     &__row {
       display: flex;
       flex-flow: column nowrap;
@@ -24,6 +25,7 @@
   }
 
   /* That's Typography only */
+
   &__context {
     font-size: ms(2);
     font-variation-settings: 'wght' 700;
