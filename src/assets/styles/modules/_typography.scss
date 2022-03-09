@@ -49,6 +49,8 @@ h1 {
     'SOFT' 10,
     'WONK' 1,
     'opsz' 80;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   margin-bottom: $spacing-medium;
   @include very-very-large-display {
     font-size: ms(8);
@@ -78,6 +80,8 @@ h2 {
     'wght' 600,
     'WONK' 1,
     'opsz' 80;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   margin-bottom: $spacing-medium;
   @include very-very-large-display {
     font-size: ms(7);
@@ -105,6 +109,8 @@ h3 {
     'WONK' 0;
   font-style: italic;
   margin-bottom: $spacing-medium;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   @include very-very-large-display {
     font-size: ms(6);
   }
@@ -123,6 +129,8 @@ h4 {
   font-family: $font-sans;
   font-size: ms(2);
   margin-bottom: $spacing-medium;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   @include very-very-large-display {
     font-size: ms(6);
   }
@@ -143,23 +151,25 @@ h4 {
 .a-display {
   font-family: $font-serif;
   letter-spacing: $spacing-letter-spacing-display;
-    line-height: $spacing-display-line-height;
-    margin-bottom: $spacing-large;
-    @include very-very-large-display {
-      font-size: ms(10);
-    }
-    @include very-large-display {
-      font-size: ms(9);
-    }
-    @include large-display {
-      font-size: ms(8);
-    }
-    @include medium-display {
-      font-size: ms(7);
-    }
-    @include small-display {
-      font-size: ms(6);
-    }
+  line-height: $spacing-display-line-height;
+  margin-bottom: $spacing-large;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  @include very-very-large-display {
+    font-size: ms(10);
+  }
+  @include very-large-display {
+    font-size: ms(9);
+  }
+  @include large-display {
+    font-size: ms(8);
+  }
+  @include medium-display {
+    font-size: ms(7);
+  }
+  @include small-display {
+    font-size: ms(6);
+  }
 
   &.-fat {
     font-variation-settings:
@@ -181,6 +191,8 @@ p,
   letter-spacing: $spacing-letter-spacing-text;
   line-height: $spacing-body-line-height;
   margin-bottom: $spacing-medium;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
   & + h2,
   & + h3 {
     margin-top: $spacing-large;
@@ -228,6 +240,8 @@ em,
 span {
   font-family: inherit;
   line-height: inherit;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 i,
@@ -236,6 +250,8 @@ em,
   color: inherit;
   font-family: inherit;
   font-style: italic;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
 }
 
 b,
