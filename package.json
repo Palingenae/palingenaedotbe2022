@@ -11,7 +11,9 @@
     "@11ty/eleventy-upgrade-help": "^1.0.1",
     "acorn": "^8.6.0",
     "eleventy-plugin-purgecss": "^0.2.0",
-    "fylgja": "^1.1.4"
+    "fylgja": "^1.1.4",
+    "postcss": "^8.4.8",
+    "postcss-scss": "^4.0.3"
   },
   "devDependencies": {
     "eleventy-plugin-dart-sass": "^1.0.3",
