@@ -67,10 +67,6 @@ h1 {
   @include medium-display {
     font-size: ms(5);
   }
-
-  // @include small-display {
-  //   font-size: ms(4);
-  // }
 }
 
 h2 {
@@ -177,7 +173,6 @@ h4 {
       'opsz' 144,
       'WONK' 1,
       'wght' 900;
-    
   }
 }
 
@@ -186,13 +181,12 @@ p,
   font: {
     family: $font-sans;
     size: ms(1);
-    feature-settings: $font-sans-alternates;
   }
   letter-spacing: $spacing-letter-spacing-text;
   line-height: $spacing-body-line-height;
   margin-bottom: $spacing-medium;
   -moz-osx-font-smoothing: grayscale;
-  -webkit-font-smoothing: antialiased;
+  -webkit-font-smoothing: grayscale;
   & + h2,
   & + h3 {
     margin-top: $spacing-large;
@@ -231,8 +225,17 @@ p,
   }
 }
 
-/* ----- Giving all labor elements the same line-height and letter spacing nomatter the context ----- */
+.context {
+  &.-subtitle {
+    font-family: $font-sans;
+    font-size: ms(3);
+    font-variation-settings: 'wght' 700;
+    margin-bottom: $spacing-large;
+  }
+  
+}
 
+/* ----- Normalizing typography in paragraphs ----- */
 b,
 i,
 p,

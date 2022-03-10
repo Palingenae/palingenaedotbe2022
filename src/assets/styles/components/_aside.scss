@@ -1,0 +1,13 @@
+.aside {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  
+  &.-socialLinks {
+    margin-left: $spacing-xlarge;
+
+    @include medium-display {
+      margin-left: 0;
+    }
+  }
+}

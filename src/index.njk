@@ -5,23 +5,23 @@ permalink: "/"
 {% extends "./_includes/_layouts/base.njk" %}
 
 {% block body %}
-    <section class="o-hero">
-      <p class="o-hero__greeting">
+    <section class="hero">
+      <p class="hero__greeting">
         {{ about.hero.greetings }}
       </p>
 
-      <p class="o-hero__introduction">
+      <p class="hero__introduction">
         {{ about.hero.whatDo }}
       </p>
 
-      <p class="o-hero__description">
+      <p class="hero__description">
         {{ about.hero.description }}
       </p>
     </section>
     <main class="main">
       <section class="section -columns">
-          <div class="header__name">
-              <p class="section__context">{{ site.contexts.about }}</p>
+          <article class="article">
+              <p class="context -subtitle">{{ site.contexts.about }}</p>
               <h1>
                   {{ about.me.name.introduction }}
                   <em>{{ about.me.name.firstname }}</em>.
@@ -31,7 +31,7 @@ permalink: "/"
                     {{ story }}
                   </p>
               {% endfor %}
-          </div>
+          </article>
           {% include "./_includes/_partials/social-links.njk" %}
       </section>
     </main>

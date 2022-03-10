@@ -5,7 +5,6 @@
     display: flex;
     flex-flow: row nowrap;
     justify-content: flex-start;
-    align-items: flex-end;
     @include medium-display {
       flex-flow: column;
     }
@@ -22,13 +21,9 @@
       flex-flow: column nowrap;
       margin-bottom: $spacing-large;
     }
-  }
 
-  /* That's Typography only */
-
-  &__context {
-    font-size: ms(2);
-    font-variation-settings: 'wght' 700;
-    margin-bottom: $spacing-medium;
+    @include medium-display {
+      flex-flow: column;
+    }
   }
 }
