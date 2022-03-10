@@ -13,9 +13,7 @@ a,
 
   &.-social {
     font-size: ms(1);
-    &:not(:last-of-type) {
-      margin-bottom: $spacing-medium;
-    }
+    margin-bottom: $spacing-medium;
   }
 }
 //   &--in {

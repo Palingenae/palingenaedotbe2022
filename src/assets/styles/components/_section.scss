@@ -1,4 +1,5 @@
 .section {
+  margin-bottom: $spacing-large;
 
   &.-columns {
     @extend .section;
@@ -25,5 +26,9 @@
     @include medium-display {
       flex-flow: column;
     }
+  }
+
+  &.-align-items-end {
+    align-items: flex-end;
   }
 }

@@ -51,7 +51,7 @@ h1 {
     'opsz' 80;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
-  margin-bottom: $spacing-medium;
+  margin-bottom: $spacing-large;
   @include very-very-large-display {
     font-size: ms(8);
   }
