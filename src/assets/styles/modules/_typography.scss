@@ -184,6 +184,7 @@ p,
   }
   letter-spacing: $spacing-letter-spacing-text;
   line-height: $spacing-body-line-height;
+  max-width: 64ch;
   margin-bottom: $spacing-medium;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: grayscale;
