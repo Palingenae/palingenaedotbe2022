@@ -1,6 +1,5 @@
 const path = require("path");
 const pluginSass = require("eleventy-plugin-dart-sass");
-const pluginPurgeCss = require("eleventy-plugin-purgecss");
 const UpgradeHelper = require("@11ty/eleventy-upgrade-help");
 
 module.exports = function (eleventyConfig) {
@@ -16,12 +15,9 @@ module.exports = function (eleventyConfig) {
     outFileName: "styles"
   });
 
-  eleventyConfig.addPlugin(pluginPurgeCss, {
-    config: "./purgecss.config.js",
-    quiet: false
-  });
-
   eleventyConfig.addPassthroughCopy("src/assets/fonts/");
+
+  eleventyConfig.setDataDeepMerge(false);
 
   return {
     dir: {
