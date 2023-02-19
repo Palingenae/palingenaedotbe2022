@@ -7,7 +7,7 @@
     "lint": "npx stylelint ./src/assets/styles/ --fix "
   },
   "dependencies": {
-    "@11ty/eleventy": "^1.0.0",
+    "@11ty/eleventy": "^2.0.0",
     "@11ty/eleventy-upgrade-help": "^1.0.1",
     "acorn": "^8.6.0",
     "fylgja": "^1.1.4",
