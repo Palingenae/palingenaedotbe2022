@@ -5,9 +5,11 @@
   margin-bottom: $spacing-xlarge;
   @include medium-display {
     padding: 0 $spacing-large;
+    margin-top: calc($spacing-large + 28px);
   }
   @include small-display {
     height: auto;
     padding: 0 $spacing-medium;
+    margin-top: calc($spacing-medium + 28px);
   }
 }

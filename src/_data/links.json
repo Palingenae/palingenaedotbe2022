@@ -1,11 +1,9 @@
 {
-    "company": "https://knplabs.com",
-    "school": "https://openclassrooms.com/fr/apprenticeship",
     "socialLinks":
     [
         {
-            "name": "Twitter",
-            "link": "https://twitter.com/Palingenae"
+            "name": "Bento",
+            "link": "https://bento.me/Palingenae"
         },
         {
             "name": "Instagram",
@@ -14,6 +12,10 @@
         {
             "name": "Github",
             "link": "https://github.com/Palingenae"
+        },
+        {
+            "name": "LinkedIn",
+            "link": "https://www.linkedin.com/in/oliviadescheerder/"
         }
     ]
 }

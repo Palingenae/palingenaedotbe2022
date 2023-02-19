@@ -1,6 +1,6 @@
 <div class="aside -socialLinks">
-    <p><b>Mes réseaux sociaux</b></p>
+    <p><b>Ailleurs, en ligne</b></p>
     {% for social in links.socialLinks %}
-        <a class="link -social" href="social.link" target="_blank" rel="noopener">{{ social.name }}</a>
+        <a class="link -social" href={{ social.link }} target="_blank" rel="noopener">{{ social.name }}</a>
     {% endfor %}
 </div>

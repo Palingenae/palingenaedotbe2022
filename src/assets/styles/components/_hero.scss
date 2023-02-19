@@ -6,7 +6,6 @@
   align-content: flex-start;
   align-items: flex-start;
   padding: 0 $spacing-xlarge;
-  margin-top: calc($spacing-large + 28px);
   @include medium-display {
     padding: 0 $spacing-large;
   }
